@@ -46,4 +46,8 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
+.section {
+  position: relative;
+  min-height: 600px;
+}
 /* Start writing sass here */

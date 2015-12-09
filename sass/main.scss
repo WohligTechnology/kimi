@@ -208,3 +208,22 @@ a {
   z-index: 0;
   bottom: -40px;
 }
+.text-holder {
+  h2 {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+}
+.container {
+  position: relative;
+}
+.know-us {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  @include transform(translateY(-40%));
+}
+@import "harsh";

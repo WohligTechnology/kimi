@@ -1,0 +1,20 @@
+/* SECTION 6 */
+$img-path: '../img/section' !default;
+$png: '.png' !default;
+
+@mixin background($image) {
+  background-image: url(#{$img-path}/$image);
+  // background-size: 100% 100%;
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cloud-sm {
+  width: 100%;
+  height: 69px;
+  // background-image: url("../img/section6/cloud1.png");
+  // background-size: cover;
+  @include background(6/cloud1.png);
+}

@@ -227,69 +227,64 @@ a {
   @include transform(translateY(-40%));
 }
 .mic {
-background-image: url('2/mic.png');
+background-image: url('../img/section2/mic.png');
 height: 100px;
 width: 100px;
 }
 .cloud1 {
-background-image: url('2/cloud1.png');
+background-image: url('../img/section2/cloud1.png');
 height: 100px;
 width: 100px;
 }
 .cloud2 {
-background-image: url('2/cloud2.png');
+background-image: url('../img/section2/cloud2.png');
 height: 100px;
 width: 100px;
 }
 .cloud3 {
-background-image: url('2/cloud3.png');
+background-image: url('../img/section2/cloud3.png');
 height: 100px;
 width: 100px;
 }
 .guitarsufi {
-background-image: url('2/guitarsufi.png');
+background-image: url('../img/section2/guitarsufi.png');
 height: 100px;
 width: 100px;
 }
 .boat {
-  background-image: url('2/boatsufi.png');
+  background-image: url('../img/section2/boatsufi.png');
   height: 100px;
   width: 100px;
 }
 .tower1 {
-  background-image: url('2/guitarsufi.png');
+  background-image: url('../img/section2/guitarsufi.png');
   height: 100px;
   width: 100px;
 }
 .tower2 {
-  background-image: url('2/guitarsufi.png');
+  background-image: url('../img/section2/guitarsufi.png');
   height: 100px;
   width: 100px;
 }
 .wave1 {
-  background-image: url('2/water1.png');
+  background-image: url('../img/section2/water1.png');
   height: 100px;
   width: 100px;
 }
 .wave2 {
-  background-image: url('2/water2.png');
+  background-image: url('../img/section2/water2.png');
   height: 100px;
   width: 100px;
 }
 .wave3 {
-  background-image: url('2/water3.png');
+  background-image: url('../img/section2/water3.png');
   height: 100px;
   width: 100px;
 }
 .wave4 {
-  background-image: url('2/water4.png');
+  background-image: url('../img/section2/water4.png');
   height: 100px;
   width: 100px;
 }
 
-/* SECTION 6 */
-.cloud-sm {
-  width: 100%;
-  height: 69px;
-  background-image: url('6/cloud1.png');
-}
+@import 'harsh.scss';

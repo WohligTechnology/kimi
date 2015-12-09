@@ -85,21 +85,12 @@ a { text-decoration: none; }
 .ab {
   position: absolute;
 }
-.lamp-figure, .clock-figure, .phone-figure {
-  float: right;
-}
-
-.sofa-figure {
-  float: left;
-}
-
 .lamp {
   width: 82.5px;
   height: 102px;
   background-image: url(../img/section7/lamp.png);
   background-size: cover;
 }
-
 .contact {
   text-align: left;
 
@@ -108,7 +99,6 @@ a { text-decoration: none; }
       font-size: 18px;
     }
 }
-
 .sofa {
   width: 500px;
   height: 360px;
@@ -116,7 +106,6 @@ a { text-decoration: none; }
   background-size: cover;
   bottom: 35px;
 }
-
 .phone {
   width: 300px;
   height: 580px;
@@ -125,7 +114,6 @@ a { text-decoration: none; }
   transform: translate(-105%, -20%);
   z-index: 0;
 }
-
 .clock {
   width: 90px;
   height: 80px;

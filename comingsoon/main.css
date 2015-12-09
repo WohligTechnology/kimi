@@ -5,10 +5,10 @@ body {
   padding: 0;
 }
 p {
-    color: #d4a630;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 0;
+  color: #d4a630;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
 }
 .texture-layer {
   background-image: url("texture.png");
@@ -22,9 +22,13 @@ p {
   background-size: auto auto;
 }
 .center {
-    text-align: center;
-    top: 50%;
-    position: absolute;
-    width: 100%;
-    transform: translateY(-50%);
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }

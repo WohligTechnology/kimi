@@ -46,3 +46,15 @@ firstapp.directive('img', function($compile, $parse) {
         }
     };
 });
+
+firstapp.directive('autoHeight', function($compile, $parse) {
+    return {
+        restrict: 'EA',
+        replace: false,
+        link: function($scope, element, attrs) {
+            var $element = $(element);
+            var windowHeight = $(window).height();
+            $element.css("height", windowHeight);
+        }
+    };
+});

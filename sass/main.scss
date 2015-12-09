@@ -224,6 +224,7 @@ a {
   width: 40%;
   position: absolute;
   top: 40%;
+  left: 300px;
   @include transform(translateY(-40%));
 }
 @import "harsh";

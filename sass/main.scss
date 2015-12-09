@@ -13,9 +13,36 @@ $brand-success: #d4a630 !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-$black: #000000 !default;
+
+$font-color: #242424 !default;
+
+$body-bg: #fff !default;
+$text-color: $font-color !default;
+
+$link-color: $font-color !default;
+$link-hover-color: $font-color !default;
+$link-hover-decoration: none !default;
+
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
+$font-funky: "Lemonade", "Helvetiva Neue", Helvetica !default;
+$font-loading: "Exo 2", "Helvetiva Neue", Helvetica !default;
+
+$border-radius-base: 0 !default;
+$border-radius-large: 0 !default;
+$border-radius-small: 0 !default;
+
+$facebook: #3a579d !default;
+$google: #dd4d3c !default;
+$twitter: #49c8f5 !default;
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 body {}
 
@@ -30,7 +57,6 @@ body {}
 .warning { color: $brand-warning; }
 .danger { color: $brand-danger; }
 .info { color: $brand-info; }
-.black { color: $black; }
 
 img.loading {
   text-align: center;
@@ -38,6 +64,7 @@ img.loading {
   width: 32px !important;
   height: auto;
 }
+
 img {
   opacity: 0;
   @include transition(all 300ms ease);
@@ -48,12 +75,9 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
+
 a { text-decoration: none; }
+
 .section {
   position: relative;
   min-height: 600px;
@@ -61,12 +85,6 @@ a { text-decoration: none; }
 .ab {
   position: absolute;
 }
-
-/* Start writing sass here */
-.contact-section {
-  margin-right: 50px;
-}
-
 .lamp-figure, .clock-figure, .phone-figure {
   float: right;
 }
@@ -82,20 +100,13 @@ a { text-decoration: none; }
   background-size: cover;
 }
 
-.contact-div {
-  position: relative;
-  left: 40%;
-  top: 50%;
-}
-
 .contact {
   text-align: left;
-  nav {
+
     a {
       letter-spacing: 5px;
       font-size: 18px;
     }
-  }
 }
 
 .sofa {
@@ -112,7 +123,7 @@ a { text-decoration: none; }
   background-image: url(../img/section7/phonebaba.png);
   background-size: cover;
   transform: translate(-105%, -20%);
-  z-index: -1;
+  z-index: 0;
 }
 
 .clock {
@@ -128,8 +139,8 @@ a { text-decoration: none; }
   height: 121px;
   margin: 0;
   background-image: url(../img/section7/floor.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  z-index: -100;
+  z-index: 0;
   bottom: -40px;
 }

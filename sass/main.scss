@@ -146,6 +146,9 @@ a {
   }
   &.four {
     z-index: 40;
+    .web-layer {
+      z-index: -1;
+    }
   }
   &.five {
     z-index: 30;
@@ -383,5 +386,31 @@ background-size: auto 113px;
       border-radius: 10px;
     }
   }
+}
+.carousel {
+  .glyphicon {
+      font-family: 'FontAwesome';
+    &.glyphicon-chevron-right:before {
+      content: '\f054';
+    }
+    &.glyphicon-chevron-left:before {
+      content: '\f053';
+    }
+  }
+}
+.carousel-inner {
+      overflow: initial;
+}
+.carousel-indicators {
+  display: none;
+}
+.carousel-control {
+  &.right, &.left {
+      background-image: none;
+      text-shadow: none;
+      color: black;
+      opacity: 1;
+  }
+
 }
 @import "harsh.scss";

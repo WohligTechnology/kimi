@@ -80,6 +80,15 @@ nav li:hover .dropdown-menu {
 a {
   text-decoration: none !important;
  }
+
+ h2 {
+   margin: 0;
+   font-weight: 300;
+   text-transform: uppercase;
+   font-size: 45px;
+   margin-bottom: 10px;
+ }
+
 .sticky-bottom {
     position: absolute;
     bottom: 0px;
@@ -116,27 +125,32 @@ a {
 .section {
   position: relative;
   min-height: 500px;
-  &.one {
+  overflow: hidden;
 
+  &.one {
+    z-index: 70;
   }
   &.two {
-
+    z-index: 60;
   }
   &.three {
     background-color: $section-bg;
-    background-image: url();
+    background-image: url("../img/section3/section3.png");
+    background-size: 100% auto;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    z-index: 50;
   }
   &.four {
-
+    z-index: 40;
   }
   &.five {
-
+    z-index: 30;
   }
   &.six {
-
+    z-index: 10;
   }
   &.seven {
-
   }
 }
 .text-upper {
@@ -190,16 +204,6 @@ a {
 }
 
 /* SECTION 2 */
-
-.text-holder {
-  h2 {
-    margin: 0;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 45px;
-    margin-bottom: 10px;
-  }
-}
 .container {
   position: relative;
 }
@@ -309,9 +313,14 @@ background-size: auto 113px;
 }
 .limo {
   width: 285px;
+  z-index: 1;
+  right: 140px;
+  bottom: 0px;
 }
 .theatre {
-  width: 380px;
+  width: 450px;
+  bottom: 0;
+  z-index: 2;
 }
 .light1 {
   width: 268px;

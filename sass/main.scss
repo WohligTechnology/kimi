@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2|Lato:400,100,300,700,900);
-
+@font-face {
+    font-family: "Lemonade";
+    src: url('../fonts/Lemonade.ttf');
+}
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";

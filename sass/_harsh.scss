@@ -64,14 +64,26 @@ section.seven, section.six {
 
 // section 6
 .cloud-sm {
-  width: 100%;
+  width: 200px;
   height: 69px;
   background-image: url('../img/section6/cloud1.png');
 }
 .cloud-md {
-  width: 282px;
-  height: 180px;
+  width: 300px;
+  height: 190px;
   background-image: url('../img/section6/cloud2.png');
+  top: 0;
+  right: 0;
+  padding-top: 30px;
+  .careers {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    h2 {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
 }
 .ufo-sm {
   width: 59px;
@@ -88,21 +100,22 @@ section.seven, section.six {
   height: 286px;
   background-image: url('../img/section6/ufobaba.png');
 }
-.garden-one {
-  width: 40%;
-  height: 146px;
-  background-image: url('../img/section6/garden1.png');
-}
-.garden-two {
-  width: 60%;
-  height: 146px;
-  background-image: url('../img/section6/garden2.png');
+.garden {
+  width: 100%;
+  height: 210px;
+  background-image: url('../img/section6/garden.png');
+  background-size: auto 210px;
+  background-repeat: repeat-x;
+  bottom: 0;
 }
 .grass {
   width: 100%;
-  height: 50px;
-  background-image: url('../img/section6/ground.png');
+  height: 30px;
+  background-image: url('../img/section6/grass.png');
+  background-size: auto 30px;
+  background-repeat: repeat-x;
   bottom: 0;
+  z-index: 1;
 }
 
 // section 5

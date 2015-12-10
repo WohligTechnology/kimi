@@ -82,6 +82,7 @@ nav li:hover .dropdown-menu {
 }
 
 a {
+  @include transition(all 300ms ease);
   text-decoration: none !important;
   outline: none !important;
  }
@@ -413,6 +414,5 @@ background-size: auto 113px;
       color: black;
       opacity: 1;
   }
-
 }
 @import "harsh.scss";

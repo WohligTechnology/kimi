@@ -329,13 +329,15 @@ background-size: auto 113px;
   z-index: 2;
 }
 .light1 {
-  width: 268px;
+  width: 450px;
+  bottom: 160px;
 }
 .wedo {
   width: 780px;
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 0px;
+  z-index: 3;
 
   h2 {
     text-align: center;
@@ -359,14 +361,14 @@ background-size: auto 113px;
       }
     }
     .title {
-      padding: 10px;
+      padding: 5px 0px;
       text-align: center;
       text-transform: capitalize;
       font-size: 24px;
       color: white;
-      background-color: purple;
+      background-color: $brand-primary;
       border-radius: 15px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
   }
 
   .image {

@@ -267,14 +267,13 @@ section.five, section.four {
   .upcoming {
     margin-top: 10px;
     text-align: right;
-    text-transform: uppercase;
   }
 }
 .speaker {
   width: 370px;
   height: 550px;
-  left: -75px;
-  bottom: -30px;
+  left: -30px;
+  bottom: -20px;
   background-image: url('../img/section4/speakers.png');
   z-index: 1;
 }

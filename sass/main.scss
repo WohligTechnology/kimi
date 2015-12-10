@@ -124,6 +124,7 @@ a {
   }
   &.three {
     background-color: $section-bg;
+    background-image: url();
   }
   &.four {
 
@@ -306,5 +307,13 @@ background-size: auto 113px;
   bottom: 0;
   left: 0;
 }
-
+.limo {
+  width: 285px;
+}
+.theatre {
+  width: 380px;
+}
+.light1 {
+  width: 268px;
+}
 @import "harsh.scss";

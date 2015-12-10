@@ -19,6 +19,8 @@ $font-color: #242424 !default;
 $body-bg: #fff !default;
 $text-color: $font-color !default;
 
+$section-bg: #d3d3d3 !default;
+
 $link-color: $font-color !default;
 $link-hover-color: $font-color !default;
 $link-hover-decoration: none !default;
@@ -114,6 +116,27 @@ a {
 .section {
   position: relative;
   min-height: 500px;
+  &.one {
+
+  }
+  &.two {
+
+  }
+  &.three {
+    background-color: $section-bg;
+  }
+  &.four {
+
+  }
+  &.five {
+
+  }
+  &.six {
+
+  }
+  &.seven {
+
+  }
 }
 .text-upper {
   text-transform: uppercase;
@@ -226,7 +249,7 @@ a {
   left: 0;
 }
 .wv {
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-position: left bottom;
   width: 100%;
 }
@@ -254,22 +277,28 @@ a {
   background-image: url('../img/section2/water1.png');
   height: 113px;
   bottom: 25px;
+background-size: auto 113px;
 }
 .wave2 {
   background-image: url('../img/section2/water2.png');
   height: 85px;
   bottom: 19px;
+  background-size: auto 85px;
 }
 .wave3 {
   background-image: url('../img/section2/water3.png');
   height: 80px;
   bottom: 20px;
+  background-size: auto 80px;
 }
 .wave4 {
   background-image: url('../img/section2/water4.png');
   height: 60px;
   bottom: 0;
   z-index: 1;
+  background-size: auto 60px;
 }
+/* SECTION 3 */
+
 
 @import "harsh.scss";

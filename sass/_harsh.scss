@@ -1,4 +1,49 @@
-/* SECTION 6 */
+// section 7
+.lamp {
+  width: 82.5px;
+  height: 102px;
+  background-image: url("../img/section7/lamp.png");
+  right: -100px;
+}
+.contact {
+  text-align: left;
+    a {
+      letter-spacing: 5px;
+      font-size: 18px;
+    }
+}
+.sofa {
+  width: 500px;
+  height: 360px;
+  background-image: url("../img/section7/bed.png");
+  bottom: 35px;
+}
+.phone {
+  width: auto;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.clock {
+  width: 90px;
+  height: 80px;
+  margin-top: 60px;
+  right: -100px;
+  top: 200px;
+  background-image: url("../img/section7/clock.png");
+}
+
+.floor {
+  width: 100%;
+  height: 121px;
+  margin: 0;
+  background-image: url("../img/section7/floor.png");
+  z-index: 0;
+  bottom: -40px;
+}
+
+// section 6
 .cloud-sm {
   width: 100%;
   height: 69px;

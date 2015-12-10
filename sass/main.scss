@@ -149,8 +149,14 @@ a {
   }
   &.six {
     z-index: 10;
+    background-color: $section-bg;
+    background-image: url("../img/section6/section6.png");
+    background-size: 100% auto;
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
   &.seven {
+    background-color: $section-bg;
   }
 }
 .text-upper {

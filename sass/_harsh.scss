@@ -151,6 +151,50 @@ section.five {
   top: 150px;
   left: 400px;
 }
+.board {
+  width: 520px;
+  height: 520px;
+  right: 220px;
+  bottom: 80px;
+  h2 {
+    margin-left: 30px;
+  }
+  .media-one {
+    padding: 35px 20px 20px 20px;
+    background-color: white;
+    border-radius: 2px;
+    border-width: 2px 3px;
+    border-color: black;
+    border-style: solid;
+    text-align: left;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .stands {
+    .stand1, .stand2 {
+      width: 15px;
+      height: 200px;
+      bottom: -50px;
+      background-color: black;
+      z-index: -1;
+    }
+    .stand1 {
+      left: 70px;
+    }
+    .stand2 {
+      right: 70px;
+    }
+  }
+}
 .tree1 {
   width: 190px;
   height: 320px;
@@ -173,21 +217,22 @@ section.five {
   background-size: auto 80px;
   background-repeat: repeat-x;
   bottom: 90px;
-  z-index: 1;
+  z-index: 2;
 }
 .sufi-guy {
-  width: 360px;
-  height: 330px;
+  width: 380px;
+  height: 350px;
   background-image: url('../img/section5/baba.png');
   left: 130px;
   bottom: 40px;
-  z-index: 1;
+  z-index: 3;
 }
 .roadway {
   width: 100%;
   height: 100px;
   background-color: #aeaeae;
   bottom: 0;
+  z-index: 1;
 }
 
 // section 4

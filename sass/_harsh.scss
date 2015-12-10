@@ -64,17 +64,20 @@ section.seven, section.six {
 
 // section 6
 .cloud-sm {
-  width: 200px;
-  height: 69px;
+  width: 140px;
+  height: 100px;
+  top: 50px;
+  left: -70px;
   background-image: url('../img/section6/cloud1.png');
 }
 .cloud-md {
   width: 300px;
   height: 190px;
   background-image: url('../img/section6/cloud2.png');
-  top: 0;
+  top: 100px;
   right: 0;
   padding-top: 30px;
+  z-index: 1;
   .careers {
     width: 100%;
     height: 100%;
@@ -83,22 +86,31 @@ section.seven, section.six {
       font-weight: 400;
       text-transform: uppercase;
     }
+    p {
+      font-size: 12px;
+    }
   }
 }
 .ufo-sm {
   width: 59px;
   height: 33px;
   background-image: url('../img/section6/ufo1.png');
+  top: 50px;
+  left: 50%;
 }
 .ufo-md {
   width: 81px;
   height: 41px;
   background-image: url('../img/section6/ufo2.png');
+  top: 100px;
+  right: 0;
 }
 .ufo-sufi {
-  width: 330px;
-  height: 286px;
+  width: 450px;
+  height: 360px;
   background-image: url('../img/section6/ufobaba.png');
+  top: 100px;
+  left: 100px;
 }
 .garden {
   width: 100%;
@@ -153,6 +165,10 @@ section.seven, section.six {
   width: 100%;
   height: 72px;
   background-image: url('../img/section5/fence.png');
+  background-size: auto 72px;
+  background-repeat: repeat-x;
+  bottom: 90px;
+  z-index: 1;
 }
 .sufi-guy {
   width: 251px;
@@ -162,7 +178,8 @@ section.seven, section.six {
 .roadway {
   width: 100%;
   height: 100px;
-  background-color: #666;
+  background-color: #aeaeae;
+  bottom: 0;
 }
 
 // section 4

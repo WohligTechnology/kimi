@@ -1,4 +1,4 @@
-section.five {
+section.five, section.four {
   background-color: $section-bg;
 }
 
@@ -237,24 +237,63 @@ section.five {
 
 // section 4
 .light {
-  width: 113px;
-  height: 116px;
+  width: 160px;
+  height: 175px;
+  top: -50px;
+  right: -50px;
   background-image: url('../img/section4/lights.png');
+}
+.event {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  left: 220px;
+  bottom: 300px;
+  .event-one {
+    border: 10px solid white;
+    box-shadow: 1px 1px 5px #000;
+    h3 {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    .date {
+      font-weight: 600;
+    }
+    button {
+      margin: 20px 0 30px 0;
+    }
+  }
+  .upcoming {
+    margin-top: 10px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+.speaker {
+  width: 370px;
+  height: 550px;
+  left: -75px;
+  bottom: -30px;
+  background-image: url('../img/section4/speakers.png');
+  z-index: 1;
+}
+.drummer {
+  width: 440px;
+  height: 350px;
+  right: 0;
+  bottom: 100px;
+  background-image: url('../img/section4/band.png');
+  z-index: 1;
 }
 .piano-foot {
   width: 100%;
-  height: 200px;
-  background-image: url('../img/section4/piano.png');
-}
-.speaker {
-  width: 235px;
-  height: 351px;
-  background-image: url('../img/section4/speakers.png');
-}
-.drummer {
-  width: 306px;
-  height: 245px;
-  background-image: url('../img/section4/band.png');
+  height: 150px;
+  bottom: 0;
+  background-image: url('../img/section4/piano.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  z-index: 0;
 }
 
 // footer

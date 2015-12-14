@@ -73,7 +73,7 @@ section.five, section.four {
 .cloud-sm {
   width: 140px;
   height: 100px;
-  top: 50px;
+  top: 80px;
   left: -70px;
   background-image: url('../img/section6/cloud1.png');
 }
@@ -81,7 +81,7 @@ section.five, section.four {
   width: 350px;
   height: 220px;
   background-image: url('../img/section6/cloud2.png');
-  top: 100px;
+  top: 130px;
   right: 0;
   padding-top: 65px;
   z-index: 1;
@@ -99,21 +99,21 @@ section.five, section.four {
   width: 70px;
   height: 40px;
   background-image: url('../img/section6/ufo1.png');
-  top: 50px;
+  top: 80px;
   left: 50%;
 }
 .ufo-md {
   width: 90px;
   height: 55px;
   background-image: url('../img/section6/ufo2.png');
-  top: 100px;
+  top: 130px;
   right: 0;
 }
 .ufo-sufi {
   width: 450px;
   height: 360px;
   background-image: url('../img/section6/ufobaba.png');
-  top: 100px;
+  top: 130px;
   left: 100px;
 }
 .garden {
@@ -138,30 +138,30 @@ section.five, section.four {
 .fly-cam1, .fly-cam3 {
   width: 170px;
   height: 150px;
-  top: 23%;
+  top: 25%;
   left: 0;
 }
 .fly-cam2 {
   width: 125px;
   height: 100px;
-  top: 10%;
+  top: 12%;
   left: 12%;
 }
 .fly-cam3 {
-  top: 20%;
+  top: 22%;
   left: 22%;
 }
 .fly-cam4 {
   width: 110px;
   height: 80px;
-  top: 8%;
+  top: 10%;
   left: 32%;
 }
 .board {
   width: 520px;
   height: 520px;
   right: 220px;
-  bottom: 80px;
+  bottom: 40px;
 
   .carousel-control {
     &.right {
@@ -349,6 +349,11 @@ footer {
   .board {
     right: 180px;
   }
+  .fly-cam3 {
+    top: 40%;
+    left: 10%;
+    zoom: 0.8;
+  }
 }
 @media (max-width: $screen-sm-max) {
   // section 7
@@ -406,7 +411,7 @@ footer {
     width: 100%;
     height: 90%;
     left: 0;
-    bottom: 10px;
+    bottom: -20px;
     padding: 0 30px;
     .carousel-control {
       &.right {

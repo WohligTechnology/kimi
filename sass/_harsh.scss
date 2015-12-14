@@ -330,11 +330,13 @@ footer {
     }
   }
 }
-// media query
 
-@media (max-width: 1200px) {
-
+// header
+.header-logo {
+  display: none;
 }
+
+// media query
 @media (max-width: $screen-md-max) {
   .sufi-guy, .tree1, .tree2 {
     zoom: 0.8;

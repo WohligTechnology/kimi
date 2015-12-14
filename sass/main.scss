@@ -101,6 +101,14 @@ a {
     width: 100%;
     left: 0;
     z-index: 99;
+    &.affix {
+        position: fixed;
+        top: 0px;
+        bottom: auto;
+        width: 100%;
+        left: 0;
+        z-index: 999;
+    }
 }
 .header-logo {
   height: 100%;
@@ -175,14 +183,6 @@ a {
   &.seven {
     background-color: $section-bg;
   }
-}
-.affix {
-    position: fixed;
-    top: 0px;
-    bottom: auto;
-    width: 100%;
-    left: 0;
-    z-index: 999;
 }
 .text-upper {
   text-transform: uppercase;

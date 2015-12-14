@@ -38,6 +38,13 @@
         zoom: .9;
         top: 50px;
     }
+    //    section3
+    .light1 {
+        zoom: .6;
+    }
+    .theatre {
+        zoom: .6;
+    }
     //section4
     .drummer {
         width: 315px;
@@ -82,6 +89,16 @@
         top: 40%;
         @include transform(translate(-50%, -40%));
     }
+    //    section-3
+    .wedo {
+        width: 100%;
+        top: 50px;
+    }
+    .theatre {
+        width: auto;
+        height: 30vh;
+        left: 30%;
+    }
 }
 
 @media (max-width: $screen-xs-max) {
@@ -120,6 +137,10 @@
     }
     .event {
         width: 70%;
+    }
+    //    section-3
+    .wedo {
+        top: 70px;
     }
 }
 
@@ -179,7 +200,10 @@
             }
         }
     }
-     .light {
+    .light {
         zoom: .6;
+    }
+    .section.three {
+        background-size: auto 60%;
     }
 }

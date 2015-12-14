@@ -332,11 +332,15 @@ footer {
 }
 // media query
 
-@media screen(max-width: 1200px) {
+@media (max-width: 1200px) {
 
 }
 @media (max-width: $screen-sm-max) {
-
+  .contact {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 @media (max-width: $screen-xs-max) {
 

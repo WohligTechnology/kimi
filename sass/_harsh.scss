@@ -138,24 +138,24 @@ section.five, section.four {
 .fly-cam1, .fly-cam3 {
   width: 170px;
   height: 150px;
-  top: 300px;
+  top: 23%;
   left: 0;
 }
 .fly-cam2 {
   width: 125px;
   height: 100px;
-  top: 200px;
-  left: 150px;
+  top: 10%;
+  left: 12%;
 }
 .fly-cam3 {
-  top: 250px;
-  left: 300px;
+  top: 20%;
+  left: 22%;
 }
 .fly-cam4 {
   width: 110px;
   height: 80px;
-  top: 150px;
-  left: 400px;
+  top: 8%;
+  left: 32%;
 }
 .board {
   width: 520px;
@@ -165,10 +165,10 @@ section.five, section.four {
 
   .carousel-control {
     &.right {
-      right: -25px;
+      right: -80px;
     }
     &.left {
-      left: -25px;
+      left: -80px;
     }
   }
   h2 {

@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-//    section-2
+    //    section-2
     .mic {
         zoom: .8;
     }
@@ -38,11 +38,22 @@
         zoom: .9;
         top: 50px;
     }
+    //section4
+    .drummer {
+        width: 315px;
+        height: 250px;
+        bottom: 90px;
+        zoom: .9;
+    }
+    .speaker {
+        width: 250px;
+        height: 400px;
+        zoom: .9;
+    }
 }
 
 @media (max-width: $screen-sm-max) {
-//    section-2
-    
+    //    section-2
     .know-us {
         width: 60%;
         left: 60%;
@@ -54,11 +65,27 @@
     .mic {
         zoom: .7;
     }
+    //    section-4
+    .drummer {
+        bottom: 10px;
+        zoom: .7;
+    }
+    .speaker {
+        zoom: .7;
+    }
+    .light {
+        zoom: .8;
+    }
+    .event {
+        width: 80%;
+        left: 50%;
+        top: 40%;
+        @include transform(translate(-50%, -40%));
+    }
 }
 
 @media (max-width: $screen-xs-max) {
-//    section-2
-    
+    //    section-2
     .know-us {
         h2 {
             font-size: 28px;
@@ -87,10 +114,16 @@
     .cloud2 {
         zoom: .8;
     }
+    //    section-4
+    .light {
+        zoom: .7;
+    }
+    .event {
+        width: 70%;
+    }
 }
 
 @media (max-width: 480px) {
-    
     .know-us {
         width: 60%;
         h2 {
@@ -129,4 +162,21 @@
         left: auto;
         right: 10px;
     }
+    //    section-4
+    .event {
+        .carousel-control.right {
+            right: -40px;
+        }
+        .carousel-control.left {
+            left: -40px;
+        }
+        .event-one {
+            h3 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+}
 }

@@ -336,6 +336,7 @@ footer {
 
 }
 @media (max-width: $screen-sm-max) {
+  // section 7
   .bookshelf {
     left: 0;
   }
@@ -346,8 +347,14 @@ footer {
     zoom: 0.8;
     bottom: 20px;
   }
+  // section 6
+  .ufo-sufi {
+    zoom: 0.8;
+    top: 30%;
+  }
 }
 @media (max-width: $screen-xs-max) {
+  // section 7
   .contact {
     top: 45%;
     left: 50%;
@@ -366,6 +373,14 @@ footer {
   }
   .lamp, .clock, .bookshelf {
     zoom: 0.6;
+  }
+  // section 6
+  .ufo-sufi {
+    zoom: 0.3;
+    top: 50%;
+  }
+  .cloud-md {
+    zoom: 0.9;
   }
 }
 @media (max-width: 640px){

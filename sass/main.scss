@@ -431,6 +431,12 @@ background-size: auto 113px;
       opacity: 1;
   }
 }
+.footer {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
 @import "harsh.scss";
 @import "amit.scss";
 @import "mobile.scss";

@@ -102,6 +102,14 @@ a {
     left: 0;
     z-index: 99;
 }
+.header-logo {
+  height: 100%;
+  padding: 10px;
+}
+.navbar-brand {
+  padding: 0;
+  height: 60px;
+}
 .navbar-primary {
     color: $brand-success;
     margin: 0;

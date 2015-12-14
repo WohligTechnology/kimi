@@ -62,7 +62,8 @@ firstapp.directive('scrollTo', function($compile, $parse) {
     replace: false,
     link: function($scope, element, attrs) {
       var $element = $(element);
-      var div = attrs.scrollTo
+      var div = attrs.scrollTo;
+      var headerHeight = $(".header").height();
       $element.click(function() {
         $('html, body').animate({
           scrollTop: $("#" + div).offset().top

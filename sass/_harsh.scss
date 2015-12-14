@@ -335,6 +335,17 @@ footer {
 @media (max-width: 1200px) {
 
 }
+@media (max-width: $screen-md-max) {
+  .sufi-guy, .tree1, .tree2 {
+    zoom: 0.8;
+  }
+  .sufi-guy {
+    left: 0;
+  }
+  .board {
+    right: 180px;
+  }
+}
 @media (max-width: $screen-sm-max) {
   // section 7
   .bookshelf {
@@ -354,15 +365,15 @@ footer {
   }
 }
 @media (max-width: $screen-xs-max) {
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
   // section 7
   .contact {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    h2 {
-      font-size: 24px;
-      font-weight: 400;
-    }
     h2, p {
       margin-bottom: 5px;
     }
@@ -381,6 +392,23 @@ footer {
   }
   .cloud-md {
     zoom: 0.9;
+  }
+  // section 5
+  .board {
+    width: 80%;
+    height: 80%;
+    transform: translate(50%, 0%);
+    .carousel-control {
+      &.right {
+        right: -25px;
+      }
+      &.left {
+        left: -25px;
+      }
+    }
+  }
+  .fence {
+    height: 50px;
   }
 }
 @media (max-width: 640px){

@@ -5,21 +5,25 @@ var navigationservice = angular.module('navigationservice', [])
     name: "About Us",
     classis: "active",
     link: "#/about",
+    scrollTo: "section2",
     subnav: []
   },{
     name: "Events",
     classis: "active",
     link: "#/events",
+    scrollTo: "section4",
     subnav: []
   },{
     name: "Media Corner",
     classis: "active",
     link: "#/media",
+    scrollTo: "section5",
     subnav: []
   },{
     name: "Contact Us",
     classis: "active",
     link: "#/contact",
+    scrollTo: "section7",
     subnav: []
   }];
 

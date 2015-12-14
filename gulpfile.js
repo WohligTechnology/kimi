@@ -11,7 +11,6 @@ var jsArray = [
     './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
     './bower_components/ui-router/release/angular-ui-router.min.js',
     './bower_components/angular-flexslider/angular-flexslider.js',
-    './bower_components/ngSmootheScroll/dist/angular-smooth-scroll.min.js',
 
     //uesr's js
     './js/app.js',

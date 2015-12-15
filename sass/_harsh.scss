@@ -357,7 +357,7 @@ footer {
 }
 .humsafar-image {
   img {
-    height: 667px;
+    height: auto;
   }
 }
 .humsafar-image, .humsafar-about, .humsafar-cast, .humsafar-events {
@@ -399,26 +399,12 @@ footer {
     p {
       line-height: 1.2;
       margin: 0;
-    }
-  }
-  .casts-one {
-    padding-right: 80px;
-    p {
       text-align: justify;
     }
   }
-  .casts-two {
-    padding: 0 40px;
-    p {
-      text-align: justify;
-    }
-  }
-  .casts-three {
-    padding-left: 80px;
-    p {
-      text-align: justify;
-    }
-  }
+  .casts-one { padding-right: 60px; }
+  .casts-two { padding: 0 30px; }
+  .casts-three { padding-left: 60px; }
 }
 .humsafar-events {
   ul {
@@ -427,7 +413,7 @@ footer {
 }
 .humsafar-media {
   padding-bottom: 70px;
-  .media-image {
+  .media-image-one, .media-image-two, .media-image-three {
     padding: 5px;
     background-color: $body-bg;
     border-radius: 5px;
@@ -473,6 +459,26 @@ footer {
   .ufo-sufi {
     zoom: 0.8;
     top: 30%;
+  }
+  .casts-one, .humsafar-cast .casts-two, .casts-three {
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+  .casts-three {
+    margin: 0;
+  }
+  .humsafar-events {
+    ul {
+      margin-bottom: 50px;
+    }
+  }
+  .humsafar-media {
+    .media-image-one, .media-image-two, .media-image-three {
+      margin: 20px 50px 0;
+    }
+    .media-image-one {
+      margin-top: 0;
+    }
   }
 }
 @media (max-width: $screen-xs-max) {

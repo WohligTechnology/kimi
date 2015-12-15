@@ -1,209 +1,229 @@
 @media (max-width: 1200px) {
-    //    section-2
-    .mic {
-        zoom: .8;
-    }
-    .guitarsufi {
-        width: 180px;
-        right: 17%;
-        bottom: 33%;
-    }
-    .boat {
-        zoom: .9;
-    }
-    .tower1 {
-        width: 90px;
-    }
-    .tower2 {
-        right: 15px;
-    }
-    .know-us {
-        h2 {
-            font-size: 40px;
-        }
-    }
-    .cloud1 {
-        width: 140px;
-        height: 90px;
-        left: -20px;
-        bottom: 195px;
-        zoom: .9;
-    }
-    .cloud2 {
-        width: 100px;
-        right: 50px;
-        zoom: .9;
-    }
-    .cloud3 {
-        zoom: .9;
-        top: 50px;
-    }
-    //    section3
-    .light1 {
-        zoom: .6;
-    }
-    .theatre {
-        zoom: .6;
-    }
-    //section4
-    .drummer {
-        width: 315px;
-        height: 250px;
-        bottom: 90px;
-        zoom: .9;
-    }
-    .speaker {
-        width: 250px;
-        height: 400px;
-        zoom: .9;
-    }
-}
 
+  //    section-2
+  .mic {
+    zoom: 0.8;
+  }
+  .guitarsufi {
+    width: 180px;
+    right: 17%;
+    bottom: 33%;
+  }
+  .boat {
+    zoom: 0.9;
+  }
+  .tower1 {
+    width: 90px;
+  }
+  .tower2 {
+    right: 15px;
+  }
+  .know-us {
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .cloud1 {
+    width: 140px;
+    height: 90px;
+    left: -20px;
+    bottom: 195px;
+    zoom: 0.9;
+  }
+  .cloud2 {
+    display: none;
+  }
+  .cloud3 {
+    zoom: 0.9;
+    top: 50px;
+  }
+
+  //    section3
+  .light1 {
+    zoom: 0.6;
+  }
+  .theatre {
+    zoom: 0.6;
+  }
+
+  //section4
+  .drummer {
+    width: 315px;
+    height: 250px;
+    bottom: 90px;
+    zoom: 0.9;
+  }
+  .speaker {
+    width: 250px;
+    height: 400px;
+    zoom: 0.9;
+  }
+}
 @media (max-width: $screen-sm-max) {
-    //    section-2
-    .know-us {
-        width: 60%;
-        left: 60%;
-        @include transform(translate(-60%, -40%));
-        h2 {
-            font-size: 35px;
-        }
-    }
-    .mic {
-        zoom: .7;
-    }
-    //    section-4
-    .drummer {
-        bottom: 10px;
-        zoom: .7;
-    }
-    .speaker {
-        zoom: .7;
-    }
-    .light {
-        zoom: .8;
-    }
-    .event {
-        width: 80%;
-        left: 50%;
-        top: 40%;
-        @include transform(translate(-50%, -40%));
-    }
-    //    section-3
-    .wedo {
-        width: 100%;
-        top: 50px;
-    }
-    .theatre {
-        width: auto;
-        height: 30vh;
-        left: 30%;
-    }
-}
 
+  //    section-2
+  .know-us {
+    width: 60%;
+    left: 60%;
+    @include transform(translate(-60%, -40%));
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .mic {
+    zoom: 0.7;
+  }
+
+  //    section-4
+  .drummer {
+    bottom: 10px;
+    zoom: 0.7;
+  }
+  .speaker {
+    zoom: 0.7;
+  }
+  .light {
+    zoom: 0.8;
+  }
+  .event {
+    width: 80%;
+    left: 50%;
+    top: 40%;
+    @include transform(translate(-50%, -40%));
+  }
+
+  //    section-3
+  .wedo {
+    width: 100%;
+    top: 50px;
+  }
+  .theatre {
+    width: auto;
+    height: 30vh;
+    left: 30%;
+  }
+}
 @media (max-width: $screen-xs-max) {
-    //    section-2
-    .know-us {
-        h2 {
-            font-size: 28px;
-        }
-    }
-    .mic {
-        zoom: .6;
-    }
-    .boat {
-        width: 80px;
-        height: 150px;
-        zoom: .8;
-        left: 70px;
-    }
-    .tower1 {
-        width: 80px;
-        right: 110px;
-    }
-    .tower2 {
-        width: 80px;
-    }
-    .cloud3 {
-        left: 200px;
-        zoom: .8;
-    }
-    .cloud2 {
-        zoom: .8;
-    }
-    //    section-4
-    .light {
-        zoom: .7;
-    }
-    .event {
-        width: 70%;
-    }
-    //    section-3
-    .wedo {
-        top: 70px;
-    }
-}
 
+  //    section-2
+  .know-us {
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .mic {
+    zoom: 0.6;
+  }
+  .boat {
+    width: 80px;
+    height: 150px;
+    zoom: 0.8;
+    left: 70px;
+  }
+  .tower1 {
+    width: 80px;
+    right: 110px;
+  }
+  .tower2 {
+    width: 80px;
+  }
+  .cloud3 {
+    left: 200px;
+    zoom: 0.8;
+  }
+  .cloud2 {
+    zoom: 0.8;
+  }
+
+  //    section-4
+  .light {
+    zoom: 0.7;
+  }
+  .event {
+    width: 70%;
+  }
+
+  //    section-3
+  .wedo {
+    top: 70px;
+  }
+}
 @media (max-width: 480px) {
-    .know-us {
-        width: 60%;
-        h2 {
-            font-size: 22px;
-        }
+  .know-us {
+    width: 60%;
+    h2 {
+      font-size: 20px;
     }
-    .mic {
-        zoom: .4;
+    p {
+      font-size: 12px;
+      line-height: 120%;
     }
-    .tower1 {
-        width: 70px;
-        right: 70px;
+  }
+  .mic {
+    zoom: 0.4;
+  }
+  .tower1 {
+    width: 70px;
+    right: 70px;
+  }
+  .tower2 {
+    width: 65px;
+  }
+  .boat {
+    left: 20px;
+    zoom: 0.7;
+  }
+  .tower1 {
+    width: 60px;
+    right: 50px;
+  }
+  .tower2 {
+    width: 60px;
+  }
+  .cloud1 {
+    zoom: 0.7;
+  }
+  .cloud2 {
+    zoom: 0.7;
+  }
+  .cloud3 {
+    zoom: 0.6;
+    left: auto;
+    right: 10px;
+  }
+  .theatre {
+    height: 58vh;
+    left: 50%;
+    @include transform (translateX(-50%));
+  }
+  .cloud-md {
+    zoom: 0.7;
+  }
+  .sofa {
+    zoom: 0.4;
+  }
+
+  //    section-4
+  .event {
+    .carousel-control.right {
+      right: -40px;
     }
-    .tower2 {
-        width: 65px;
+    .carousel-control.left {
+      left: -40px;
     }
-    .boat {
-        left: 20px;
-        zoom: .7;
+    .event-one {
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 13px;
+      }
     }
-    .tower1 {
-        width: 60px;
-        right: 50px;
-    }
-    .tower2 {
-        width: 60px;
-    }
-    .cloud1 {
-        zoom: .7;
-    }
-    .cloud2 {
-        zoom: .7;
-    }
-    .cloud3 {
-        zoom: .6;
-        left: auto;
-        right: 10px;
-    }
-    //    section-4
-    .event {
-        .carousel-control.right {
-            right: -40px;
-        }
-        .carousel-control.left {
-            left: -40px;
-        }
-        .event-one {
-            h3 {
-                font-size: 40px;
-            }
-            p {
-                font-size: 13px;
-            }
-        }
-    }
-    .light {
-        zoom: .6;
-    }
-    .section.three {
-        background-size: auto 60%;
-    }
+  }
+  .light {
+    zoom: 0.6;
+  }
+  .section.three {
+    background-size: auto 60%;
+  }
 }

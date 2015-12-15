@@ -83,4 +83,31 @@
   .piano-foot {
     display: none;
   }
+  .board {
+    top: 60px;
+    .media-one {
+      padding: 15px 0 5px;
+      p {
+        line-height: 120%;
+        height: 58px;
+        overflow: hidden;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 5px 0;
+      }
+    }
+  }
+  .cloud-md {
+    top: 30px;
+  }
+  .sofa {
+    zoom: 0.35;
+    bottom: 135px;
+  }
+  .contact p {
+    font-size: 18px;
+    line-height: 110%;
+  }
 }

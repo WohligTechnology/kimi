@@ -1,6 +1,6 @@
 <ul class="nav navbar-nav">
     <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-        <a href scroll-to="{{menu.scrollTo}}">{{menu.name}}</a>
+        <a href="home/{{menu.scrollTo}}">{{menu.name}}</a>
         <ul class="dropdown-menu" ng-if="menu.subnav!='';">
             <li ng-repeat="submenu in menu.subnav">
                 <a href="{{submenu.link}}">{{submenu.name}}</a>

@@ -337,27 +337,51 @@ footer {
   width: auto;
   height: 100%;
 }
+.sticky-top {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.pad-sixty {
+  padding-top: 60px;
+}
 
 // eventdetail
 .humsafar {
   background-color: $section-bg;
-  h2 {
-    margin-bottom: 20px;
-  }
+  position: relative;
+  overflow: hidden;
+  h2 { margin-bottom: 20px; }
+  img { width: 100%; }
+  span { font-weight: 600; }
 }
 .humsafar-image {
   img {
-    width: 100%;
     height: 667px;
   }
 }
 .humsafar-image, .humsafar-about, .humsafar-cast, .humsafar-events {
   margin-bottom: 100px;
 }
+.humsafar-about {
+  position: relative;
+  .cloudy-sm {
+    width: 150px;
+    height: 100px;
+    top: -50px;
+    left: -50px;
+  }
+  .cloudy-md {
+    width: 280px;
+    height: 180px;
+    bottom: -150px;
+    right: -165px;
+  }
+}
 .humsafar-cast {
-  .casts {
+  .casts-one, .casts-two, .casts-three {
     .cast-image {
-      margin-bottom: 20px;
+      margin: 10px 10px 30px 10px;
       padding: 5px;
       background-color: $body-bg;
       border-radius: 5px;
@@ -366,18 +390,33 @@ footer {
         padding: 10px 10px 0 10px;
         border: 1px solid #000000;
         border-radius: 2px;
-        img {
-          width: 100%;
-        }
         h3 {
           margin: 10px 0;
-          font-weight: 300;
           text-align: center;
         }
       }
     }
     p {
-      font-size: 12px;
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+  .casts-one {
+    padding-right: 80px;
+    p {
+      text-align: justify;
+    }
+  }
+  .casts-two {
+    padding: 0 40px;
+    p {
+      text-align: justify;
+    }
+  }
+  .casts-three {
+    padding-left: 80px;
+    p {
+      text-align: justify;
     }
   }
 }
@@ -385,21 +424,15 @@ footer {
   ul {
     margin-left: -20px;
   }
-  .event-drummer {
-    img {
-      width: 100%;
-    }
-  }
 }
 .humsafar-media {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   .media-image {
     padding: 5px;
     background-color: $body-bg;
     border-radius: 5px;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
     img {
-      width: 100%;
       padding: 10px 10px 0 10px;
       border: 1px solid #000000;
       border-radius: 2px;

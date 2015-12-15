@@ -33,11 +33,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
+.controller('EventDetailController', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+  $scope.template = TemplateService.changecontent("eventdetail");
+  $scope.menutitle = NavigationService.makeactive("Humsafar");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+})
+
 .controller('HeaderController', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
   });
 })
+
 
 ;

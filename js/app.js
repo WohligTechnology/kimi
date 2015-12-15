@@ -19,6 +19,12 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     controller: 'HomeController'
   })
 
+    .state('eventdetail', {
+    url: "/eventdetail",
+    templateUrl: "views/template.html",
+    controller: 'EventDetailController'
+  })
+
   $urlRouterProvider.otherwise("/home");
 
 });

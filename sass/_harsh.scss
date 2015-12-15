@@ -430,6 +430,56 @@ footer {
     height: 50px;
   }
 }
-@media (max-width: 640px){
 
+// landscape
+@media (max-width: $screen-xs-max) and (orientation: landscape) {
+  .section {
+    min-height: auto;
+  }
+  .at-center .logo {
+    width: 150px;
+    margin: -70px auto 0;
+  }
+  .down-text {
+    margin-top: 40px;
+  }
+  .mic, .tower1, .tower2, .cloud3 {
+    display: none;
+  }
+  .cloud2 {
+    right: 0;
+  }
+  .boat {
+    left: 0;
+    bottom: 20px;
+  }
+  .wave1 {
+    height: 50px;
+    background-size: auto 50px;
+    bottom: 20px;
+  }
+  .wave2 {
+    height: 35px;
+    background-size: auto 35px;
+    bottom: 15px;
+  }
+  .wave3 {
+    height: 25px;
+    background-size: auto 25px;
+    bottom: 15px;
+  }
+  .wave4 {
+    height: 30px;
+    background-size: auto 30px;
+  }
+  .know-us {
+    width: 70%;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+// landscape with height
+@media (max-height: 280px) and (orientation: landscape) {
 }

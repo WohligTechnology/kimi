@@ -17,6 +17,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     seven: "views/section/section7.html",
   };
 
+
+  $scope.$on('$viewContentLoaded', function() {
+    $timeout(function() {
+      $('.fullpage').fullpage();
+    }, 1000);
+
+  });
+
   $scope.wedo = [{
     id: 1,
     title: 'Musicals',

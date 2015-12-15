@@ -1,0 +1,86 @@
+// landscape
+@media (max-width: $screen-xs-max) and (orientation: landscape) {
+  .section {
+    min-height: auto;
+  }
+  .at-center .logo {
+    width: 150px;
+    margin: -70px auto 0;
+  }
+  .down-text {
+    margin-top: 40px;
+  }
+  .mic,
+  .tower1,
+  .tower2,
+  .cloud3 {
+    display: none;
+  }
+  .cloud2 {
+    right: 0;
+  }
+  .boat {
+    left: 0;
+    bottom: 20px;
+  }
+  .wave1 {
+    height: 50px;
+    background-size: auto 50px;
+    bottom: 20px;
+  }
+  .wave2 {
+    height: 35px;
+    background-size: auto 35px;
+    bottom: 15px;
+  }
+  .wave3 {
+    height: 25px;
+    background-size: auto 25px;
+    bottom: 15px;
+  }
+  .wave4 {
+    height: 30px;
+    background-size: auto 30px;
+  }
+  .know-us {
+    width: 70%;
+    p {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .theatre {
+    display: none;
+  }
+  .carousel-inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wedo h2 {
+    margin-bottom: 10px;
+  }
+  .event {
+    top: 170px;
+    .upcoming {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+    .event-one {
+      p {
+        font-size: 12px;
+      }
+      h3 {
+        font-size: 26px;
+        margin: 10px 0 5px;
+      }
+      button {
+        margin: 10px 0;
+      }
+    }
+  }
+  .piano-foot {
+    display: none;
+  }
+}

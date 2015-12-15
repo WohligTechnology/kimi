@@ -97,10 +97,12 @@ a {
 
 .sticky-bottom {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     width: 100%;
     left: 0;
     z-index: 99;
+    @include transition(all 700ms ease);
+
     &.affix {
         position: fixed;
         top: 0px;
@@ -109,6 +111,11 @@ a {
         left: 0;
         z-index: 999;
     }
+}
+.fp-viewing-0  {
+  .sticky-bottom {
+    top: calc(100% - 60px)
+  }
 }
 .header-logo {
   height: 100%;

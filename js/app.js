@@ -78,20 +78,3 @@ firstapp.directive('scrollTo', function($compile, $parse) {
     }
   };
 });
-
-firstapp.directive('stickyHeader', function($compile, $parse) {
-  return {
-    restrict: 'EA',
-    replace: false,
-    link: function($scope, element, attrs) {
-      var $element = $(element);
-      var scrollPosition = $(window).height() - $(".header").height();
-      console.log(scrollPosition);
-      $element.affix({
-        offset: {
-          top: scrollPosition,
-        }
-      });
-    }
-  };
-});

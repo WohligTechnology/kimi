@@ -460,12 +460,14 @@ footer {
     zoom: 0.8;
     top: 30%;
   }
-  .casts-one, .humsafar-cast .casts-two, .casts-three {
-    margin-bottom: 50px;
-    padding: 0 50px;
-  }
-  .casts-three {
-    margin: 0;
+  .humsafar-cast {
+    .casts-one, .casts-two, .casts-three {
+      margin-bottom: 50px;
+      padding: 0 20px;
+    }
+    .casts-three {
+      margin: 0;
+    }
   }
   .humsafar-events {
     ul {
@@ -474,7 +476,7 @@ footer {
   }
   .humsafar-media {
     .media-image-one, .media-image-two, .media-image-three {
-      margin: 20px 50px 0;
+      margin: 20px 20px 0;
     }
     .media-image-one {
       margin-top: 0;

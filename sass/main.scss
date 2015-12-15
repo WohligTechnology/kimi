@@ -234,6 +234,10 @@ a {
   z-index: 1;
   background-size: auto auto;
 }
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: none;
+    outline-offset: 0;
+}
 .ab {
   position: absolute;
   background-size: cover;

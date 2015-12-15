@@ -192,8 +192,8 @@
     right: 10px;
   }
   .theatre {
-    height: 58vh;
     left: 50%;
+    bottom: 34px;
     @include transform (translateX(-50%));
   }
   .cloud-md {
@@ -225,5 +225,8 @@
   }
   .section.three {
     background-size: auto 60%;
+  }
+  .board .media-one {
+    padding: 20px 15px 10px 15px;
   }
 }

@@ -21,7 +21,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     .state('eventdetail', {
     url: "/eventdetail",
-    templateUrl: "views/template.html",
+    templateUrl: "views/template-content.html",
     controller: 'EventDetailController'
   })
 

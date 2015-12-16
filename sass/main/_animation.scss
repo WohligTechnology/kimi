@@ -1,0 +1,35 @@
+.cloud1 {
+	@include animation(cloud1-animation 6s linear 0s infinite);
+}
+.cloud2 {
+	@include animation(cloud2-animation 6s linear 0s infinite);
+}
+.cloud3 {
+	@include animation(cloud3-animation 6s linear 0s infinite);
+}
+
+
+@include keyframes (cloud1-animation) {
+	0% {
+		@include transform(translate(-1000px));
+	}
+	100% {
+		@include transform( translateY(-0));
+	}
+}
+@include keyframes (cloud2-animation) {
+	0% {
+		@include transform(translate(-1000px));
+	}
+	100% {
+		@include transform( translateY(-0));
+	}
+}
+@include keyframes (cloud3-animation) {
+	0% {
+		@include transform(translate(-1000px));
+	}
+	100% {
+		@include transform( translateY(-0));
+	}
+}

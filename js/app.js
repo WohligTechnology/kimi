@@ -13,13 +13,17 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$loca
 
   $stateProvider
 
-    .state('home', {
+  .state('home', {
     url: "/home",
     templateUrl: "views/template.html",
     controller: 'HomeController'
   })
-
-    .state('eventdetail', {
+  .state('home2', {
+    url: "/home/:name",
+    templateUrl: "views/template.html",
+    controller: 'HomeController'
+  })
+  .state('eventdetail', {
     url: "/eventdetail",
     templateUrl: "views/template-content.html",
     controller: 'EventDetailController'

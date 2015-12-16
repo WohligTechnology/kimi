@@ -1,11 +1,17 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider'])
 
-.controller('HomeController', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('HomeController', function($scope, TemplateService, NavigationService, $timeout,$stateParams) {
   //Used to name the .html file
+
   $scope.template = TemplateService.changecontent("home");
   $scope.menutitle = NavigationService.makeactive("Home");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+
+  $scope.changeFullPage  = function(no) {
+      console.log(no);
+      $.fn.fullpage.moveTo(no);
+  };
 
   $scope.section = {
     one: "views/section/section1.html",
@@ -21,6 +27,31 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.$on('$viewContentLoaded', function() {
     $timeout(function() {
       $('.fullpage').fullpage();
+      console.log($stateParams.name);
+      $scope.homeval  = $stateParams.name;
+      switch($scope.homeval) {
+        case "events":
+        $.fn.fullpage.moveTo(4);
+        break;
+        case "contact":
+        $.fn.fullpage.moveTo(7);
+        break;
+        case "media":
+        $.fn.fullpage.moveTo(5);
+        break;
+        case "about":
+        $.fn.fullpage.moveTo(2);
+        break;
+        case "home":
+        $.fn.fullpage.moveTo(1);
+        break;
+        default:
+        $.fn.fullpage.moveTo(1);
+        break;
+      }
+
+
+
     }, 1000);
 
   });

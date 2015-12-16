@@ -5,21 +5,25 @@ var navigationservice = angular.module('navigationservice', [])
     name: "About Us",
     classis: "active",
     link: "about",
+    fullno: 2,
     subnav: []
   },{
     name: "Events",
     classis: "active",
     link: "events",
+    fullno: 4,
     subnav: []
   },{
     name: "Media Corner",
     classis: "active",
     link: "media",
+    fullno: 5,
     subnav: []
   },{
     name: "Contact Us",
     classis: "active",
     link: "contact",
+    fullno: 7,
     subnav: []
   }];
 

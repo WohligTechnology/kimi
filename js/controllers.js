@@ -28,7 +28,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $timeout(function() {
       $('.fullpage').fullpage();
-      $('#scene').parallax();
+      // $('#scene').parallax();
       console.log($stateParams.name);
       $scope.homeval = $stateParams.name;
       switch ($scope.homeval) {

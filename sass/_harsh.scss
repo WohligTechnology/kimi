@@ -1,4 +1,5 @@
-section.five, section.four {
+section.five,
+section.four {
   background-color: $section-bg;
 }
 
@@ -6,13 +7,13 @@ section.five, section.four {
 .lamp {
   width: 120px;
   height: 150px;
-  background-image: url("../img/section7/lamp.png");
-  right: 0px;
+  background-image: url(../img/section7/lamp.png);
+  right: 0;
 }
 .bookshelf {
   width: 200px;
   height: 90px;
-  background-image: url("../img/section7/bookshelf.png");
+  background-image: url(../img/section7/bookshelf.png);
   top: 100px;
   left: 150px;
 }
@@ -33,14 +34,20 @@ section.five, section.four {
     letter-spacing: 10px;
     font-size: 24px;
   }
-  a.fb:hover { color: $facebook; }
-  a.in:hover { color: $instagram; }
-  a.tw:hover { color: $twitter; }
+  a.fb:hover {
+    color: $facebook;
+  }
+  a.in:hover {
+    color: $instagram;
+  }
+  a.tw:hover {
+    color: $twitter;
+  }
 }
 .sofa {
   width: 550px;
   height: 400px;
-  background-image: url("../img/section7/bed.png");
+  background-image: url(../img/section7/bed.png);
   bottom: 60px;
   left: 0;
 }
@@ -54,15 +61,15 @@ section.five, section.four {
 .clock {
   width: 120px;
   height: 105px;
-  right: 0px;
+  right: 0;
   top: 200px;
-  background-image: url("../img/section7/clock.png");
+  background-image: url(../img/section7/clock.png);
 }
 .floor {
   width: 100%;
   height: 121px;
   bottom: 49px;
-  background-image: url("../img/section7/floor.png");
+  background-image: url(../img/section7/floor.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
@@ -75,51 +82,54 @@ section.five, section.four {
   height: 100px;
   top: 80px;
   left: -70px;
-  background-image: url('../img/section6/cloud1.png');
+  background-image: url(../img/section6/cloud1.png);
 }
-.cloud-md {
-  width: 350px;
-  height: 220px;
-  background-image: url('../img/section6/cloud2.png');
-  top: 130px;
-  right: 0;
-  padding-top: 65px;
-  z-index: 1;
-  .careers {
-    width: 100%;
-    height: 100%;
-    margin-left: -5px;
-    text-align: center;
-    p {
-      font-size: 12px;
-    }
+
+// .cloud-md {
+//   width: 350px;
+//   height: 220px;
+//   background-image: url('../img/section6/cloud2.png');
+//   top: 130px;
+//   right: 0;
+//   padding-top: 65px;
+//   z-index: 1;
+.text-holder.careers {
+  width: 50%;
+  position: absolute;
+  right: -20px;
+  z-index: 2;
+  top: 170px;
+  p {
+    font-size: 12px;
   }
 }
+
+// }
 .ufo-sm {
   width: 70px;
   height: 40px;
-  background-image: url('../img/section6/ufo1.png');
+  background-image: url(../img/section6/ufo1.png);
   top: 80px;
   left: 50%;
 }
 .ufo-md {
-  width: 90px;
+  width: 105px;
   height: 55px;
-  background-image: url('../img/section6/ufo2.png');
+  background-image: url(../img/section6/ufo2.png);
   top: 130px;
   right: 0;
 }
 .ufo-sufi {
   width: 450px;
   height: 360px;
-  background-image: url('../img/section6/ufobaba.png');
+  background-image: url(../img/section6/ufobaba.png);
   top: 130px;
   left: 100px;
 }
 .garden {
   width: 100%;
   height: 210px;
-  background-image: url('../img/section6/garden.png');
+  background-image: url(../img/section6/garden.png);
   background-size: auto 210px;
   background-repeat: repeat-x;
   bottom: 0;
@@ -127,7 +137,7 @@ section.five, section.four {
 .grass {
   width: 100%;
   height: 30px;
-  background-image: url('../img/section6/grass.png');
+  background-image: url(../img/section6/grass.png);
   background-size: auto 30px;
   background-repeat: repeat-x;
   bottom: 0;
@@ -135,7 +145,8 @@ section.five, section.four {
 }
 
 // section 5
-.fly-cam1, .fly-cam3 {
+.fly-cam1,
+.fly-cam3 {
   width: 170px;
   height: 150px;
   top: 25%;
@@ -162,7 +173,6 @@ section.five, section.four {
   height: 520px;
   right: 220px;
   bottom: 40px;
-
   .carousel-control {
     &.right {
       right: -80px;
@@ -175,7 +185,7 @@ section.five, section.four {
     margin-left: 30px;
   }
   .media-one {
-    padding: 35px 20px 20px 20px;
+    padding: 35px 20px 20px;
     background-color: white;
     border-radius: 2px;
     border-width: 2px 3px;
@@ -195,7 +205,8 @@ section.five, section.four {
     }
   }
   .stands {
-    .stand1, .stand2 {
+    .stand1,
+    .stand2 {
       width: 15px;
       height: 200px;
       bottom: -50px;
@@ -213,7 +224,7 @@ section.five, section.four {
 .tree1 {
   width: 190px;
   height: 320px;
-  background-image: url('../img/section5/tree1.png');
+  background-image: url(../img/section5/tree1.png);
   bottom: 100px;
   right: 0;
   z-index: 1;
@@ -221,14 +232,14 @@ section.five, section.four {
 .tree2 {
   width: 260px;
   height: 460px;
-  background-image: url('../img/section5/tree2.png');
+  background-image: url(../img/section5/tree2.png);
   right: -100px;
   bottom: 100px;
 }
 .fence {
   width: 100%;
   height: 80px;
-  background-image: url('../img/section5/fence.png');
+  background-image: url(../img/section5/fence.png);
   background-size: auto 80px;
   background-repeat: repeat-x;
   bottom: 90px;
@@ -237,7 +248,7 @@ section.five, section.four {
 .sufi-guy {
   width: 380px;
   height: 350px;
-  background-image: url('../img/section5/baba.png');
+  background-image: url(../img/section5/baba.png);
   left: 130px;
   bottom: 40px;
   z-index: 3;
@@ -256,7 +267,7 @@ section.five, section.four {
   height: 175px;
   top: -50px;
   right: -50px;
-  background-image: url('../img/section4/lights.png');
+  background-image: url(../img/section4/lights.png);
 }
 .event {
   width: 500px;
@@ -270,13 +281,13 @@ section.five, section.four {
     h3 {
       font-family: $font-funky;
       font-size: 54px;
-      margin: 30px 0 10px 0px;
+      margin: 30px 0 10px;
     }
     .date {
       font-weight: 600;
     }
     .btn {
-      margin: 20px 0 30px 0;
+      margin: 20px 0 30px;
     }
   }
   .upcoming {
@@ -297,7 +308,7 @@ section.five, section.four {
   height: 550px;
   left: -30px;
   bottom: -20px;
-  background-image: url('../img/section4/speakers.png');
+  background-image: url(../img/section4/speakers.gif);
   z-index: 1;
 }
 .drummer {
@@ -305,14 +316,14 @@ section.five, section.four {
   height: 350px;
   right: 0;
   bottom: 100px;
-  background-image: url('../img/section4/band.png');
+  background-image: url(../img/section4/band.png);
   z-index: 1;
 }
 .piano-foot {
   width: 100%;
   height: 150px;
   bottom: 0;
-  background-image: url('../img/section4/piano.jpg');
+  background-image: url(../img/section4/piano.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
@@ -322,10 +333,11 @@ section.five, section.four {
 // footer
 footer {
   color: white;
-  padding: 15px 0 5px 0;
+  padding: 15px 0 5px;
   a {
     color: white;
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
       color: white;
     }
   }
@@ -333,6 +345,7 @@ footer {
 
 // header
 .header-logo {
+
   //display: none;
   width: auto;
   height: 100%;
@@ -351,16 +364,25 @@ footer {
   background-color: $section-bg;
   position: relative;
   overflow: hidden;
-  h2 { margin-bottom: 20px; }
-  img { width: 100%; }
-  span { font-weight: 600; }
+  h2 {
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-weight: 600;
+  }
 }
 .humsafar-image {
   img {
     height: auto;
   }
 }
-.humsafar-image, .humsafar-about, .humsafar-cast, .humsafar-events {
+.humsafar-image,
+.humsafar-about,
+.humsafar-cast,
+.humsafar-events {
   margin-bottom: 100px;
 }
 .humsafar-about {
@@ -379,15 +401,17 @@ footer {
   }
 }
 .humsafar-cast {
-  .casts-one, .casts-two, .casts-three {
+  .casts-one,
+  .casts-two,
+  .casts-three {
     .cast-image {
-      margin: 10px 10px 30px 10px;
+      margin: 10px 10px 30px;
       padding: 5px;
       background-color: $body-bg;
       border-radius: 5px;
       box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
       .cast-inner {
-        padding: 10px 10px 0 10px;
+        padding: 10px 10px 0;
         border: 1px solid #000000;
         border-radius: 2px;
         h3 {
@@ -402,9 +426,15 @@ footer {
       text-align: justify;
     }
   }
-  .casts-one { padding-right: 60px; }
-  .casts-two { padding: 0 30px; }
-  .casts-three { padding-left: 60px; }
+  .casts-one {
+    padding-right: 60px;
+  }
+  .casts-two {
+    padding: 0 30px;
+  }
+  .casts-three {
+    padding-left: 60px;
+  }
 }
 .humsafar-events {
   ul {
@@ -413,22 +443,29 @@ footer {
 }
 .humsafar-media {
   padding-bottom: 70px;
-  .media-image-one, .media-image-two, .media-image-three {
+  .media-image-one,
+  .media-image-two,
+  .media-image-three {
     padding: 5px;
     background-color: $body-bg;
     border-radius: 5px;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
     img {
-      padding: 10px 10px 0 10px;
+      padding: 10px 10px 0;
       border: 1px solid #000000;
       border-radius: 2px;
     }
   }
 }
-
+.min-hght{
+  min-height: 222px;
+  padding-top: 17%;
+}
 // media query
 @media (max-width: $screen-md-max) {
-  .sufi-guy, .tree1, .tree2 {
+  .sufi-guy,
+  .tree1,
+  .tree2 {
     zoom: 0.8;
   }
   .sufi-guy {
@@ -444,6 +481,7 @@ footer {
   }
 }
 @media (max-width: $screen-sm-max) {
+
   // section 7
   .bookshelf {
     left: 0;
@@ -455,13 +493,17 @@ footer {
     zoom: 0.8;
     bottom: 100px;
   }
+
   // section 6
   .ufo-sufi {
-    zoom: 0.8;
+    zoom: 0.7;
     top: 30%;
+    left: 50px;
   }
   .humsafar-cast {
-    .casts-one, .casts-two, .casts-three {
+    .casts-one,
+    .casts-two,
+    .casts-three {
       margin-bottom: 50px;
       padding: 0 20px;
     }
@@ -475,7 +517,9 @@ footer {
     }
   }
   .humsafar-media {
-    .media-image-one, .media-image-two, .media-image-three {
+    .media-image-one,
+    .media-image-two,
+    .media-image-three {
       margin: 20px 20px 0;
     }
     .media-image-one {
@@ -488,12 +532,14 @@ footer {
     font-size: 24px;
     font-weight: 400;
   }
+
   // section 7
   .contact {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    h2, p {
+    h2,
+    p {
       margin-bottom: 5px;
     }
   }
@@ -501,9 +547,12 @@ footer {
     zoom: 0.5;
     bottom: 100px;
   }
-  .lamp, .clock, .bookshelf {
+  .lamp,
+  .clock,
+  .bookshelf {
     zoom: 0.6;
   }
+
   // section 6
   .ufo-sufi {
     zoom: 0.3;
@@ -516,6 +565,14 @@ footer {
     height: 150px;
     background-size: auto 150px;
   }
+  .text-holder.careers {
+    width: 70%;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+    top: 170px;
+  }
+
   // section 5
   .board {
     width: 100%;
@@ -540,6 +597,19 @@ footer {
     height: 50px;
   }
 }
+@media (max-width: 550px) {
+  .text-holder.careers {
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    z-index: 2;
+    top: 55px;
+  }
+  .ufo-sufi {
+    opacity: 0;
+  }
+}
 
 // landscape
 @media (max-width: $screen-xs-max) and (orientation: landscape) {
@@ -553,7 +623,10 @@ footer {
   .down-text {
     margin-top: 40px;
   }
-  .mic, .tower1, .tower2, .cloud3 {
+  .mic,
+  .tower1,
+  .tower2,
+  .cloud3 {
     display: none;
   }
   .cloud2 {
@@ -592,4 +665,5 @@ footer {
 
 // landscape with height
 @media (max-height: 280px) and (orientation: landscape) {
+
 }

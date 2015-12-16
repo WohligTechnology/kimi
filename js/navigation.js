@@ -8,6 +8,12 @@ var navigationservice = angular.module('navigationservice', [])
     fullno: 2,
     subnav: []
   },{
+    name: "Services",
+    classis: "active",
+    link: "services",
+    fullno: 3,
+    subnav: []
+  },{
     name: "Events",
     classis: "active",
     link: "events",
@@ -18,6 +24,12 @@ var navigationservice = angular.module('navigationservice', [])
     classis: "active",
     link: "media",
     fullno: 5,
+    subnav: []
+  },{
+    name: "Careers",
+    classis: "active",
+    link: "careers",
+    fullno: 6,
     subnav: []
   },{
     name: "Contact Us",

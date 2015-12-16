@@ -30,14 +30,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       console.log($stateParams.name);
       $scope.homeval  = $stateParams.name;
       switch($scope.homeval) {
-        case "events":
-        $.fn.fullpage.moveTo(4);
-        break;
         case "contact":
         $.fn.fullpage.moveTo(7);
         break;
+        case "careers":
+        $.fn.fullpage.moveTo(6);
+        break;
         case "media":
         $.fn.fullpage.moveTo(5);
+        break;
+        case "events":
+        $.fn.fullpage.moveTo(4);
+        break;
+        case "services":
+        $.fn.fullpage.moveTo(3);
         break;
         case "about":
         $.fn.fullpage.moveTo(2);
@@ -78,6 +84,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Humsafar");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+  TemplateService.header = "views/header-others.html";
 })
 
 .controller('HeaderController', function($scope, TemplateService) {

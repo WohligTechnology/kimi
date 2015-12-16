@@ -1,0 +1,12 @@
+<ul class="nav navbar-nav">
+    <li ng-repeat="menu in navigation" class="{{menu.classis}}">
+        <!-- <a ng-click="changeFullPage(menu.fullno)">{{menu.name}}</a> -->
+        <a href="#/home/{{menu.link}}">{{menu.name}}
+        <ul class="dropdown-menu" ng-if="menu.subnav!='';">
+            <li ng-repeat="submenu in menu.subnav">
+                <a href="{{submenu.link}}">{{submenu.name}}</a>
+                njlkvjbl
+            </li>
+        </ul>
+    </li>
+</ul>

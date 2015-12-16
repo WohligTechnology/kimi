@@ -1,96 +1,92 @@
 .cloud1 {
-@include animation(cloud1-animation 6s ease-in-out 0s infinite);
+  @include animation(cloud1-animation 6s ease-in-out 0s infinite);
 }
 .cloud2 {
-@include animation(cloud2-animation 6s ease-in-out 0s infinite);
+  @include animation(cloud2-animation 6s ease-in-out 0s infinite);
 }
 .cloud3 {
-@include animation(cloud3-animation 8s ease-in-out 0s infinite);
+  @include animation(cloud3-animation 8s ease-in-out 0s infinite);
 }
-
-
 @include keyframes (cloud1-animation) {
-0% {
-@include transform(translateX(-20px));
-}
-50% {
-      @include transform(translateX(20px));
-    }
-100% {
-@include transform( translateX(-20px));
-}
+  0% {
+    @include transform(translateX(-20px));
+  }
+  50% {
+    @include transform(translateX(20px));
+  }
+  100% {
+    @include transform( translateX(-20px));
+  }
 }
 @include keyframes (cloud2-animation) {
-0% {
-@include transform(translateX(-30px));
-}
-    50% {
-        @include transform(translate(30px));
-    }
-100% {
-@include transform( translateX(-30px));
-}
+  0% {
+    @include transform(translateX(-30px));
+  }
+  50% {
+    @include transform(translate(30px));
+  }
+  100% {
+    @include transform( translateX(-30px));
+  }
 }
 @include keyframes (cloud3-animation) {
-0% {
-@include transform(translateX(0px));
-}
-    50% {
-        @include transform(translateX(40px))
-    }
-100% {
-@include transform( translateX(0px));
-}
-}
-.wave1 {
-    @include animation(wave1-animation 6s ease-in-out 0s infinite);
-}
-.wave2 {
-    @include animation(wave2-animation 6s ease-in-out 0s infinite);
-}
-.wave3 {
-    @include animation(wave1-animation 6s ease-in-out 0s infinite);
-}
-.wave4 {
-    @include animation(wave2-animation 6s ease-in-out 0s infinite);
+  0% {
+    @include transform(translateX(0px));
+  }
+  50% {
+    @include transform(translateX(40px))
+  }
+  100% {
+    @include transform( translateX(0px));
+  }
 }
 
-
+// .wave1 {
+//     @include animation(wave1-animation 6s ease-in-out 0s infinite);
+// }
+// .wave2 {
+//     @include animation(wave2-animation 6s ease-in-out 0s infinite);
+// }
+// .wave3 {
+//     @include animation(wave1-animation 6s ease-in-out 0s infinite);
+// }
+// .wave4 {
+//     @include animation(wave2-animation 6s ease-in-out 0s infinite);
+// }
+//
 @include keyframes (wave1-animation) {
-    0% {
-        @include transform(translate(-10px,-2px));
-    }
-    50% {
-        @include transform(translate(10px,2px));
-    }
-    100% {
-        @include transform(translate(-10px,-2px));
-    }
+  0% {
+    @include transform(translate(-10px,-2px));
+  }
+  50% {
+    @include transform(translate(10px,2px));
+  }
+  100% {
+    @include transform(translate(-10px,-2px));
+  }
 }
 @include keyframes (wave2-animation) {
-    0% {
-        @include transform(translate(10px,2px));
-    }
-    50% {
-        @include transform(translate(-10px,-2px));
-    }
-    100% {
-        @include transform(translate(10px,2px));
-    }
+  0% {
+    @include transform(translate(10px,2px));
+  }
+  50% {
+    @include transform(translate(-10px,-2px));
+  }
+  100% {
+    @include transform(translate(10px,2px));
+  }
 }
-
 .boat {
-    @include animation(boat-animation 6s linear 0s infinite);
+  @include animation(boat-animation 6s linear 0s infinite);
 }
-
 @include keyframes(boat-animaton) {
-    0% {
-        @include transform(translate(15px,3px) rotateX(20deg)); 
-    }
-    50% {
-        @include transform(translate(-15px,3px) rotateX(-20deg));
-    }
-    100% {
-        @include transform(translate(15px,3px) rotateX(20deg));
-    }
+  0% {
+    @include transform(translate(15px,3px) rotateX(20deg));
+  }
+  50% {
+    @include transform(translate(-15px,3px) rotateX(-20deg));
+  }
+  100% {
+    @include transform(translate(15px,3px) rotateX(20deg));
+  }
 }

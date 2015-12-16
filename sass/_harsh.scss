@@ -457,10 +457,11 @@ footer {
     }
   }
 }
-.min-hght{
+.min-hght {
   min-height: 222px;
   padding-top: 17%;
 }
+
 // media query
 @media (max-width: $screen-md-max) {
   .sufi-guy,
@@ -596,6 +597,10 @@ footer {
   .roadway {
     height: 50px;
   }
+  .sufi-guy{
+    zoom: 0.6;
+    bottom: 0;
+  }
 }
 @media (max-width: 550px) {
   .text-holder.careers {
@@ -661,9 +666,4 @@ footer {
       font-size: 12px;
     }
   }
-}
-
-// landscape with height
-@media (max-height: 280px) and (orientation: landscape) {
-
 }

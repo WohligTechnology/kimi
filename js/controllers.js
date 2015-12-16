@@ -91,6 +91,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
+    $("body").css("overflow","scroll");
   });
 })
 

@@ -1,6 +1,6 @@
 angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngSanitize', 'angular-flexslider'])
 
-.controller('HomeController', function($scope, TemplateService, NavigationService, $timeout,$stateParams) {
+.controller('HomeController', function($scope, TemplateService, NavigationService, $timeout, $stateParams) {
   //Used to name the .html file
 
   $scope.template = TemplateService.changecontent("home");
@@ -8,9 +8,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $scope.changeFullPage  = function(no) {
-      console.log(no);
-      $.fn.fullpage.moveTo(no);
+  $scope.changeFullPage = function(no) {
+    console.log(no);
+    $.fn.fullpage.moveTo(no);
   };
 
   $scope.section = {
@@ -25,35 +25,37 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
   $scope.$on('$viewContentLoaded', function() {
+
     $timeout(function() {
       $('.fullpage').fullpage();
+      $('#scene').parallax();
       console.log($stateParams.name);
-      $scope.homeval  = $stateParams.name;
-      switch($scope.homeval) {
+      $scope.homeval = $stateParams.name;
+      switch ($scope.homeval) {
         case "contact":
-        $.fn.fullpage.moveTo(7);
-        break;
+          $.fn.fullpage.moveTo(7);
+          break;
         case "careers":
-        $.fn.fullpage.moveTo(6);
-        break;
+          $.fn.fullpage.moveTo(6);
+          break;
         case "media":
-        $.fn.fullpage.moveTo(5);
-        break;
+          $.fn.fullpage.moveTo(5);
+          break;
         case "events":
-        $.fn.fullpage.moveTo(4);
-        break;
+          $.fn.fullpage.moveTo(4);
+          break;
         case "services":
-        $.fn.fullpage.moveTo(3);
-        break;
+          $.fn.fullpage.moveTo(3);
+          break;
         case "about":
-        $.fn.fullpage.moveTo(2);
-        break;
+          $.fn.fullpage.moveTo(2);
+          break;
         case "home":
-        $.fn.fullpage.moveTo(1);
-        break;
+          $.fn.fullpage.moveTo(1);
+          break;
         default:
-        $.fn.fullpage.moveTo(1);
-        break;
+          $.fn.fullpage.moveTo(1);
+          break;
       }
 
 
@@ -66,11 +68,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     id: 1,
     title: 'Musicals',
     src: 'img/musical.jpg'
-  },{
+  }, {
     id: 2,
     title: 'Theatre',
     src: 'img/theatre.jpg'
-  },{
+  }, {
     id: 3,
     title: 'Concerts',
     src: 'img/concerts.jpg'
@@ -91,7 +93,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
     $(window).scrollTop(0);
-    $("body").css("overflow","scroll");
+    $("body").css("overflow", "scroll");
   });
 })
 

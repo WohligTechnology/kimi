@@ -30,7 +30,6 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$loca
 
 });
 
-
 firstapp.directive('img', function($compile, $parse) {
   return {
     restrict: 'E',
@@ -59,23 +58,6 @@ firstapp.directive('autoHeight', function($compile, $parse) {
       var $element = $(element);
       var windowHeight = $(window).height();
       $element.css("height", windowHeight);
-    }
-  };
-});
-
-firstapp.directive('scrollTo', function($compile, $parse) {
-  return {
-    restrict: 'EA',
-    replace: false,
-    link: function($scope, element, attrs) {
-      var $element = $(element);
-      var div = attrs.scrollTo;
-      var headerHeight = $(".header").height();
-      $element.click(function() {
-        $('html, body').animate({
-          scrollTop: $("#" + div).offset().top
-        }, 700);
-      });
     }
   };
 });

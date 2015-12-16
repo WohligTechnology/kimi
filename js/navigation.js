@@ -4,26 +4,22 @@ var navigationservice = angular.module('navigationservice', [])
   var navigation = [{
     name: "About Us",
     classis: "active",
-    link: "#/about",
-    scrollTo: "aboutus",
+    link: "about",
     subnav: []
   },{
     name: "Events",
     classis: "active",
-    link: "#/events",
-    scrollTo: "events",
+    link: "events",
     subnav: []
   },{
     name: "Media Corner",
     classis: "active",
-    link: "#/media",
-    scrollTo: "media",
+    link: "media",
     subnav: []
   },{
     name: "Contact Us",
     classis: "active",
-    link: "#/contact",
-    scrollTo: "contact",
+    link: "contact",
     subnav: []
   }];
 

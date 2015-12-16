@@ -6,28 +6,28 @@ var firstapp = angular.module('firstapp', [
   'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider,$locationProvider) {
+firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
 
   // for http request with session
   $httpProvider.defaults.withCredentials = true;
 
   $stateProvider
 
-  .state('home', {
-    url: "/home",
-    templateUrl: "views/template.html",
-    controller: 'HomeController'
-  })
-  .state('home2', {
-    url: "/home/:name",
-    templateUrl: "views/template.html",
-    controller: 'HomeController'
-  })
-  .state('eventdetail', {
-    url: "/eventdetail",
-    templateUrl: "views/template-content.html",
-    controller: 'EventDetailController'
-  })
+    .state('home', {
+      url: "/home",
+      templateUrl: "views/template.html",
+      controller: 'HomeController'
+    })
+    .state('home2', {
+      url: "/home/:name",
+      templateUrl: "views/template.html",
+      controller: 'HomeController'
+    })
+    .state('eventdetail', {
+      url: "/eventdetail",
+      templateUrl: "views/template-content.html",
+      controller: 'EventDetailController'
+    })
 
   $urlRouterProvider.otherwise("/home");
   // $locationProvider.html5Mode(true).hashPrefix('!');
@@ -62,6 +62,17 @@ firstapp.directive('autoHeight', function($compile, $parse) {
       var $element = $(element);
       var windowHeight = $(window).height();
       $element.css("height", windowHeight);
+    }
+  };
+});
+firstapp.directive('parallax', function($compile, $parse) {
+  return {
+    restrict: 'EA',
+    replace: false,
+    link: function($scope, element, attrs) {
+      var $element = $(element);
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
     }
   };
 });

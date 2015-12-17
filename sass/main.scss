@@ -368,6 +368,14 @@ a {
 .light1 {
   width: 450px;
   bottom: 160px;
+  .x-img1 {
+    margin-left: 40px;
+    display: inline-block;
+  }
+  .x-img2 {
+    margin-left: -90px;
+    display: inline-block;
+  }
 }
 .wedo {
   width: 780px;
@@ -442,7 +450,7 @@ a {
       opacity: 1;
   }
 }
-
+       
 .footer {
   &.atbottom {
     bottom: 0px;

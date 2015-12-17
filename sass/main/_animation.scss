@@ -41,19 +41,19 @@
   }
 }
 
-// .wave1 {
-//     @include animation(wave1-animation 6s ease-in-out 0s infinite);
-// }
-// .wave2 {
-//     @include animation(wave2-animation 6s ease-in-out 0s infinite);
-// }
-// .wave3 {
-//     @include animation(wave1-animation 6s ease-in-out 0s infinite);
-// }
-// .wave4 {
-//     @include animation(wave2-animation 6s ease-in-out 0s infinite);
-// }
-//
+.wave1 {
+    @include animation(wave1-animation 6s ease-in-out 0s infinite);
+}
+.wave2 {
+    @include animation(wave2-animation 6s ease-in-out 0s infinite);
+}
+.wave3 {
+    @include animation(wave1-animation 6s ease-in-out 0s infinite);
+}
+.wave4 {
+    @include animation(wave2-animation 6s ease-in-out 0s infinite);
+}
+
 @include keyframes (wave1-animation) {
   0% {
     @include transform(translate(-10px,-2px));

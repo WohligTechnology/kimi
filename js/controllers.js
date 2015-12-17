@@ -25,10 +25,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
   $scope.$on('$viewContentLoaded', function() {
-
     $timeout(function() {
       $('.fullpage').fullpage();
-      // $('#scene').parallax();
+      $('#scene').parallax();
       console.log($stateParams.name);
       $scope.homeval = $stateParams.name;
       switch ($scope.homeval) {
@@ -57,11 +56,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
           $.fn.fullpage.moveTo(1);
           break;
       }
-
-
-
     }, 1000);
-
   });
 
   $scope.wedo = [{

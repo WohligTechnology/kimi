@@ -227,7 +227,7 @@ h2 {
   background: url(../img/background/texture.png)no-repeat 50%;
   width: 110%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.5;
   left: -5%!important;
   top: -5%!important;
   position: absolute;
@@ -257,8 +257,8 @@ h2 {
 .know-us {
   width: 40%;
   position: absolute;
-  top: 40%;
-  left: 220px;
+  top: -80%!important;
+  left: 27%!important;
   @include transform(translateY(-40%));
 }
 .mic {
@@ -271,28 +271,34 @@ h2 {
   background-image: url(../img/section2/cloud1.png);
   height: 100px;
   width: 148px;
-  left: -20px;
-  bottom: 170px;
+  left: 10px!important;
+  top: 60%!important;
 }
 .cloud2 {
   background-image: url(../img/section2/cloud2.png);
   height: 74px;
   width: 110px;
-  right: 100px;
-  top: 50%;
+  left: 80%!important;
+  top: 50%!important;
   @include transform(translateY(-50%));
 }
 .cloud3 {
   background-image: url(../img/section2/cloud3.png);
   height: 100px;
   width: 143px;
-  top: 80px;
-  left: 170px;
+  top: 80px!important;
+  left: 170px!important;
+}
+.middle-layer {
+  position: absolute;
+  top: -100%;
+  height: 550px;
+  width: 100%;
 }
 .guitarsufi {
   width: 207px;
-  left: 65%!important;
-  top: 20%!important;
+  left: 65% !important;
+  top: -90% !important;
 }
 .sea {
   position: absolute;
@@ -310,12 +316,12 @@ h2 {
   height: 158px;
   width: 100px;
   z-index: 1;
-  left: 145px!important;
-  top: -125px!important;
+  left: 144px !important;
+  top: -163px !important;
 }
 .tower1 {
   width: 100px;
-  top: -90px !important;
+  top: -75px !important;
   z-index: 1;
   left: 70% !important;
 }
@@ -327,29 +333,29 @@ h2 {
 }
 .wave1 {
   background-image: url(../img/section2/water1.png);
-  height: 136px;
-  top: -30px!important;
+  height: 160px;
+  top: -85px !important;
   width: 140%;
-  left: -20% !important;
+  left: -30% !important;
 }
 .wave2 {
   background-image: url(../img/section2/water2.png);
-  height: 93px;
-  top: -19px!important;
-  width: 170%;
+  height: 100px;
+  top: -45px !important;
+  width: 140%;
   left: -15% !important;
 }
 .wave3 {
   background-image: url(../img/section2/water3.png);
-  height: 80px;
-  bottom: 20px;
+  height: 90px;
+  top: -20px!important;
   width: 125%;
   left: -15% !important;
 }
 .wave4 {
   background-image: url(../img/section2/water4.png);
-  height: 80px;
-  top: -5px!important;
+  height: 95px;
+  top: -10px!important;
   z-index: 1;
   width: 110%;
   left: -5%!important;

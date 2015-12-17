@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2|Lato:400,100,300,700,900);
 @font-face {
-    font-family: "Lemonade";
-    src: url('../fonts/Lemonade.ttf');
+  font-family: "Lemonade";
+  src: url(../fonts/Lemonade.ttf);
 }
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -10,66 +10,73 @@
 @import "../bower_components/font-awesome/css/font-awesome.min.css";
 
 /* Bootstrap Variables Goes Here */
-
 $brand-primary: #4d2261 !default;
 $brand-success: #d4a630 !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-
 $font-color: #242424 !default;
-
 $body-bg: #fff !default;
 $text-color: $font-color !default;
-
 $section-bg: #d3d3d3 !default;
-
 $link-color: $font-color !default;
 $link-hover-color: $font-color !default;
 $link-hover-decoration: none !default;
-
 $font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif: "Lato", Georgia, "Times New Roman", Times, serif !default;
 $font-funky: "Lemonade", "Helvetiva Neue", Helvetica !default;
 $font-loading: "Exo 2", "Helvetiva Neue", Helvetica !default;
-
 $border-radius-base: 0 !default;
 $border-radius-large: 0 !default;
 $border-radius-small: 0 !default;
-
 $facebook: #3a579d !default;
 $google: #dd4d3c !default;
 $twitter: #49c8f5 !default;
 $instagram: #396d9a !default;
-
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
 
-body {}
-
-.primary-bg { background-color: $brand-primary;}
-.success-bg { background-color: $brand-success;}
-.warning-bg { background-color: $brand-warning;}
-.danger-bg { background-color: $brand-danger;}
-.info-bg { background-color: $brand-info;}
-
-.primary { color: $brand-primary; }
-.success { color: $brand-success; }
-.warning { color: $brand-warning; }
-.danger { color: $brand-danger; }
-.info { color: $brand-info; }
-
+}
+.primary-bg {
+  background-color: $brand-primary;
+}
+.success-bg {
+  background-color: $brand-success;
+}
+.warning-bg {
+  background-color: $brand-warning;
+}
+.danger-bg {
+  background-color: $brand-danger;
+}
+.info-bg {
+  background-color: $brand-info;
+}
+.primary {
+  color: $brand-primary;
+}
+.success {
+  color: $brand-success;
+}
+.warning {
+  color: $brand-warning;
+}
+.danger {
+  color: $brand-danger;
+}
+.info {
+  color: $brand-info;
+}
 img.loading {
   text-align: center;
   opacity: 1;
   width: 32px !important;
   height: auto;
 }
-
 img {
   opacity: 0;
   @include transition(all 300ms ease);
@@ -80,42 +87,38 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block;
 }
-
 a {
   @include transition(all 300ms ease);
   text-decoration: none !important;
   outline: none !important;
   cursor: pointer;
- }
-
- h2 {
-   margin: 0;
-   font-weight: 300;
-   text-transform: uppercase;
-   font-size: 45px;
-   margin-bottom: 10px;
- }
-
+}
+h2 {
+  margin: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
 .sticky-bottom {
-    position: absolute;
-    top: 0px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 99;
+  @include transition(all 700ms ease);
+  &.affix {
+    position: fixed;
+    top: 0;
+    bottom: auto;
     width: 100%;
     left: 0;
-    z-index: 99;
-    @include transition(all 700ms ease);
-
-    &.affix {
-        position: fixed;
-        top: 0px;
-        bottom: auto;
-        width: 100%;
-        left: 0;
-        z-index: 999;
-    }
+    z-index: 999;
+  }
 }
-.fp-viewing-0  {
+.fp-viewing-0 {
   .sticky-bottom {
-    top: calc(100% - 60px)
+    top: calc(100% - 60px);
   }
 }
 .header-logo {
@@ -127,36 +130,33 @@ a {
   height: 60px;
 }
 .navbar-primary {
-    color: $brand-success;
-    margin: 0;
-    border: 0;
-    background-color: $brand-primary;
-    text-align: center;
-
-    .nav {
-      display: inline-block;
-      float: none;
-      margin-bottom: -4px;
-
-      > li {
-        > a {
-          color: inherit;
-          @include transition(all 300ms ease);
-          font-size: 16px;
-          padding: 20px 15px;
-
-          &:hover, &:focus {
-            background-color: transparent;
-          }
+  color: $brand-success;
+  margin: 0;
+  border: 0;
+  background-color: $brand-primary;
+  text-align: center;
+  .nav {
+    display: inline-block;
+    float: none;
+    margin-bottom: -4px;
+    > li {
+      > a {
+        color: inherit;
+        @include transition(all 300ms ease);
+        font-size: 16px;
+        padding: 20px 15px;
+        &:hover,
+        &:focus {
+          background-color: transparent;
         }
       }
     }
+  }
 }
 .section {
   position: relative;
   min-height: 500px;
   overflow: hidden;
-
   &.one {
     z-index: 70;
   }
@@ -165,7 +165,7 @@ a {
   }
   &.three {
     background-color: $section-bg;
-    background-image: url("../img/section3/section3.png");
+    background-image: url(../img/section3/section3.png);
     background-size: 100% auto;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -183,7 +183,7 @@ a {
   &.six {
     z-index: 10;
     background-color: $section-bg;
-    background-image: url("../img/section6/section6.png");
+    background-image: url(../img/section6/section6.png);
     background-size: 100% auto;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -199,16 +199,15 @@ a {
   background-color: $brand-success;
 }
 .at-center {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    @include transform(translateY(-50%));
-
-    .logo {
-      width: 220px;
-      margin: -70px auto 0;
-    }
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  @include transform(translateY(-50%));
+  .logo {
+    width: 220px;
+    margin: -70px auto 0;
+  }
 }
 .down-text {
   position: absolute;
@@ -225,19 +224,24 @@ a {
   }
 }
 .web-layer {
-  background-image: url("../img/background/texture.png");
-  width: 100%;
+  background: url(../img/background/texture.png)no-repeat 50%;
+  width: 110%;
   height: 100%;
+  opacity: 0.3;
+  left: -5%!important;
+  top: -5%!important;
   position: absolute;
   opacity: 0.3;
-  left: 0;
-  top: 0;
   z-index: 1;
-  background-size: auto auto;
 }
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: none;
-    outline-offset: 0;
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: 0;
 }
 .ab {
   position: absolute;
@@ -258,20 +262,20 @@ a {
   @include transform(translateY(-40%));
 }
 .mic {
-  background-image: url('../img/section2/mic.png');
+  background-image: url(../img/section2/mic.png);
   height: 350px;
   width: 163px;
   left: 30px;
 }
 .cloud1 {
-  background-image: url('../img/section2/cloud1.png');
+  background-image: url(../img/section2/cloud1.png);
   height: 100px;
   width: 148px;
   left: -20px;
   bottom: 170px;
 }
 .cloud2 {
-  background-image: url('../img/section2/cloud2.png');
+  background-image: url(../img/section2/cloud2.png);
   height: 74px;
   width: 110px;
   right: 100px;
@@ -279,7 +283,7 @@ a {
   @include transform(translateY(-50%));
 }
 .cloud3 {
-  background-image: url('../img/section2/cloud3.png');
+  background-image: url(../img/section2/cloud3.png);
   height: 100px;
   width: 143px;
   top: 80px;
@@ -287,13 +291,13 @@ a {
 }
 .guitarsufi {
   width: 207px;
-  right: 22%;
-  bottom: 26%;
+  left: 65%!important;
+  top: 20%!important;
 }
 .sea {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 71px;
   left: 0;
 }
 .wv {
@@ -302,49 +306,53 @@ a {
   width: 100%;
 }
 .boat {
-    background-image: url('../img/section2/boatsufi.png');
-    height: 158px;
-    width: 100px;
-    bottom: 38px;
-    z-index: 1;
-    left: 190px;
+  background-image: url(../img/section2/boatsufi.png);
+  height: 158px;
+  width: 100px;
+  z-index: 1;
+  left: 145px!important;
+  top: -125px!important;
 }
 .tower1 {
   width: 100px;
-  bottom: 10px;
+  top: -90px !important;
   z-index: 1;
-  right: 160px;
+  left: 70% !important;
 }
 .tower2 {
   width: 100px;
-  bottom: 30px;
+  top: -300px!important;
   z-index: 0;
-  right: 110px;
+  left: 80%!important;
 }
 .wave1 {
-  background-image: url('../img/section2/water1.png');
-  height: 113px;
-  bottom: 25px;
-  background-size: auto 113px;
+  background-image: url(../img/section2/water1.png);
+  height: 136px;
+  top: -30px!important;
+  width: 140%;
+  left: -20% !important;
 }
 .wave2 {
-  background-image: url('../img/section2/water2.png');
-  height: 85px;
-  bottom: 19px;
-  background-size: auto 85px;
+  background-image: url(../img/section2/water2.png);
+  height: 93px;
+  top: -19px!important;
+  width: 170%;
+  left: -15% !important;
 }
 .wave3 {
-  background-image: url('../img/section2/water3.png');
+  background-image: url(../img/section2/water3.png);
   height: 80px;
   bottom: 20px;
-  background-size: auto 80px;
+  width: 125%;
+  left: -15% !important;
 }
 .wave4 {
-  background-image: url('../img/section2/water4.png');
-  height: 60px;
-  bottom: 0;
+  background-image: url(../img/section2/water4.png);
+  height: 80px;
+  top: -5px!important;
   z-index: 1;
-  background-size: auto 60px;
+  width: 110%;
+  left: -5%!important;
 }
 /* SECTION 3 */
 .road {
@@ -358,7 +366,7 @@ a {
   width: 285px;
   z-index: 1;
   right: 140px;
-  bottom: 0px;
+  bottom: 0;
 }
 .theatre {
   width: 450px;
@@ -373,40 +381,37 @@ a {
   width: 780px;
   position: absolute;
   top: 100px;
-  right: 0px;
+  right: 0;
   z-index: 3;
-
   h2 {
     text-align: center;
   }
 }
 .card {
-    background-color: white;
-    padding: 7px;
-    border-radius: 3px;
-    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.4);
-
-    .fancy-border {
-      background-image: url("../img/section3/border-dot.jpg");
-      padding: 15px;
-      background-size: 15px;
-      background-position: left top;
-      .white-bg {
-        background-color: white;
-        padding: 10px;
-      }
+  background-color: white;
+  padding: 7px;
+  border-radius: 3px;
+  box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.4);
+  .fancy-border {
+    background-image: url(../img/section3/border-dot.jpg);
+    padding: 15px;
+    background-size: 15px;
+    background-position: left top;
+    .white-bg {
+      background-color: white;
+      padding: 10px;
     }
-    .title {
-      padding: 5px 0px;
-      text-align: center;
-      text-transform: capitalize;
-      font-size: 24px;
-      color: white;
-      background-color: $brand-primary;
-      border-radius: 15px;
-      margin-bottom: 15px;
   }
-
+  .title {
+    padding: 5px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: white;
+    background-color: $brand-primary;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
   .image {
     img {
       width: 100%;
@@ -419,7 +424,7 @@ a {
 }
 .carousel {
   .glyphicon {
-      font-family: 'FontAwesome';
+    font-family: 'FontAwesome';
     &.glyphicon-chevron-right:before {
       content: '\f054';
     }
@@ -429,23 +434,23 @@ a {
   }
 }
 .carousel-inner {
-      overflow: initial;
+  overflow: initial;
 }
 .carousel-indicators {
   display: none;
 }
 .carousel-control {
-  &.right, &.left {
-      background-image: none;
-      text-shadow: none;
-      color: black;
-      opacity: 1;
+  &.right,
+  &.left {
+    background-image: none;
+    text-shadow: none;
+    color: black;
+    opacity: 1;
   }
 }
-
 .footer {
   &.atbottom {
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     width: 100%;
     z-index: 1;

@@ -79,7 +79,7 @@
 .boat {
   @include animation(boat-animation 6s linear 0s infinite);
 }
-@include keyframes(boat-animaton) {
+@include keyframes (boat-animaton) {
   0% {
     @include transform(translate(15px,3px) rotateX(20deg));
   }
@@ -89,4 +89,21 @@
   100% {
     @include transform(translate(15px,3px) rotateX(20deg));
   }
+}
+
+//careers
+
+.cloud-sm {
+    @include animation(cloud-sm-animaton 6s linear 0s infinite);
+}
+@include keyframes (cloud-sm-animation) {
+    0% {
+        @include transform(translate(-30px,10px));
+    }
+    50% {
+        @include transform(translate(30px,-10px));
+    }
+    100%  {
+        @include transform(translate(-30px,10px));
+    }
 }

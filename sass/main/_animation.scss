@@ -90,48 +90,48 @@
     @include transform(translate(15px,3px) rotateX(20deg));
   }
 }
-// .light1 {
-//   @include animation( light1-animation 8s ease-in-out 0s infinite);
-// }
-// @include keyframes (light1-animation) {
-//   0% {
-//     @include opacity(0);
-//     @include transform(rotateY(180deg));
-//   }
-//   25% {
-//     @include opacity(0.3);
-//     @include transform(rotateY(0deg));
-//   }
-//   50% {
-//     @include opacity(0.6);
-//     @include transform(rotateY(180deg));
-//   }
-//   75% {
-//     @include opacity(1);
-//     @include transform(rotateY(0deg));
-//   }
-//   100% {
-//     @include opacity(0.6);
-//     @include transform(rotateY(180deg));
-//   }
-// }
-.x-img1 {
-  @include animation(light-animation 8s ease infinite);
+.light1 {
+  @include animation( light1-animation 8s ease-in-out 0s infinite);
 }
-@include keyframes (light-animaton) {
+@include keyframes (light1-animation) {
   0% {
-    @include transform(rotate(45deg));
-    @include opacity(1);
+    @include opacity(0);
+    @include transform(rotateY(180deg));
+  }
+  25% {
+    @include opacity(0.3);
+    @include transform(rotateY(0deg));
   }
   50% {
-    @include transform(rotate(-45deg));
-    @include opacity(0);
+    @include opacity(0.6);
+    @include transform(rotateY(180deg));
   }
-  100%{
-    @include transform(rotate(45deg));
+  75% {
     @include opacity(1);
+    @include transform(rotateY(0deg));
+  }
+  100% {
+    @include opacity(0.6);
+    @include transform(rotateY(180deg));
   }
 }
+// .x-img1 {
+//   @include animation(light-animation 8s ease infinite);
+// }
+// @include keyframes (light-animaton) {
+//   0% {
+//     @include transform(rotate(45deg));
+//     @include opacity(1);
+//   }
+//   50% {
+//     @include transform(rotate(-45deg));
+//     @include opacity(0);
+//   }
+//   100%{
+//     @include transform(rotate(45deg));
+//     @include opacity(1);
+//   }
+// }
 
 // hall of fame
 .fly-cam1 {

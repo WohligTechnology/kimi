@@ -243,9 +243,7 @@
     @include transform(translateX(-20px));
   }
 }
-.fade-me {
-  @include animation(genie 6s ease 3s forwards);
-}
+
 
 //careers
 .cloud-sm {
@@ -333,4 +331,10 @@
   100% {
     @include opacity(1);
   }
+}
+.fp-viewing-4  .fade-me {
+  @include animation(genie 6s ease 1s forwards);
+}
+.phone {
+  @include animation(sufi-animtion 12s ease 0s infinite);
 }

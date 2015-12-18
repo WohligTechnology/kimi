@@ -209,6 +209,7 @@ h2 {
     margin: -70px auto 0;
   }
 }
+
 .down-text {
   position: absolute;
   z-index: 3;
@@ -267,7 +268,10 @@ h2 {
   width: 163px;
 }
 .layer-mic {
-  left: 30px;
+  top: -5%!important;
+}
+.fade-me {
+    opacity: 0;
 }
 .cloud1 {
   background-image: url(../img/section2/cloud1.png);
@@ -455,7 +459,6 @@ h2 {
     border-radius: 15px;
     margin-bottom: 15px;
   }
-  
   .image {
     img {
       width: 100%;

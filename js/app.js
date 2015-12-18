@@ -64,6 +64,7 @@ firstapp.directive('autoHeight', function($compile, $parse) {
       $element.css("height", windowHeight);
       setTimeout(function() {
         $element.css("height", windowHeight);
+        console.log("Delay"+windowHeight);
       }, 1500);
     }
   };

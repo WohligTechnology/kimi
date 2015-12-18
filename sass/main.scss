@@ -365,6 +365,12 @@ a {
   bottom: 0;
   z-index: 2;
 }
+.car {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+}
 .light1 {
   width: 450px;
   bottom: 160px;
@@ -454,7 +460,7 @@ a {
 .footer {
   &.atbottom {
     bottom: 0px;
-    position: absolute;  
+    position: absolute;
     width: 100%;
     z-index: 1;
   }

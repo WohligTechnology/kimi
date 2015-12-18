@@ -62,9 +62,6 @@ firstapp.directive('autoHeight', function($compile, $parse) {
       var $element = $(element);
       var windowHeight = $(window).height();
       $element.css("height", windowHeight);
-      $(window).resize(function() {
-        $element.css("height", windowHeight);
-      });
     }
   };
 });

@@ -163,7 +163,7 @@ h2 {
   &.two {
     z-index: 60;
   }
-   .three {
+  &.three {
     background-color: $section-bg;
     background-image: url(../img/section3/section3.png);
     background-size: 100% auto;

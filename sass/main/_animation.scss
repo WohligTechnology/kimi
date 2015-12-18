@@ -1,3 +1,5 @@
+// section-2
+
 .cloud1 {
   @include animation(cloud1-animation 6s ease-in-out 0s infinite);
 }
@@ -74,8 +76,22 @@
     @include transform(translate(10px,2px));
   }
 }
+.mic {
+  @include animation(mic 10s ease 0s infinite);
+}
+@include keyframes(mic) {
+  0% {
+    @include transform(rotate(-5deg));
+  }
+  50% {
+    @include transform(rotate(5deg))
+  }
+  100% {
+@include transform(rotate(-5deg));
+  }
+}
 .boat {
-  @include animation(boat-animation 6s linear 0s infinite);
+  @include animation(wave1-animation 6s linear 0s infinite);
 }
 @include keyframes (boat-animaton) {
   0% {
@@ -131,27 +147,29 @@
   }
 }
 
+// section-3
 .light1 {
   @include animation(light2-animation 8s ease 0s infinite);
 }
 @include keyframes (light2-animation) {
   0% {
-    @include transform( scaleY(0)) @include transform-origin(100% 100%);
-  }
-  25% {
-    @include transform(scaleY(1));
+    @include transform( scaleY(1)) ;
     @include transform-origin(100% 100%);
   }
-  50% {
+  25% {
     @include transform(scaleY(10));
     @include transform-origin(100% 100%);
   }
-  75% {
+  50% {
     @include transform(scaleY(1));
     @include transform-origin(100% 100%);
   }
+  75% {
+    @include transform(scaleY(10));
+    @include transform-origin(100% 100%);
+  }
   100% {
-    @include transform(scaleY(0));
+    @include transform(scaleY(1));
     @include transform-origin(100% 100%);
   }
 }
@@ -226,6 +244,7 @@
   }
 }
 
+
 //careers
 .cloud-sm {
   @include animation(move 9s linear 0s infinite);
@@ -286,7 +305,7 @@
     @include transform(translateX(0));
   }
   100% {
-    @include transform(translateX(-69%));
+    @include transform(translateX(-30%));
   }
 }
 .fp-viewing-4 .fence {
@@ -312,4 +331,10 @@
   100% {
     @include opacity(1);
   }
+}
+.fp-viewing-4  .fade-me {
+  @include animation(genie 6s ease 1s forwards);
+}
+.phone {
+  @include animation(sufi-animtion 12s ease 0s infinite);
 }

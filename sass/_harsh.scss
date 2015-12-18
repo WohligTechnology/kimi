@@ -145,6 +145,9 @@ section.four {
 }
 
 // section 5
+.fade-me {
+  opacity: 0;
+}
 .fly-cam1,
 .fly-cam3 {
   width: 170px;
@@ -254,6 +257,7 @@ section.four {
   bottom: 40px;
   z-index: 3;
   opacity: 0;
+  @include transition(all 1s ease);
 }
 .roadway {
   width: 100%;

@@ -258,7 +258,7 @@ h2 {
 .know-us {
   width: 40%;
   position: absolute;
-  top: -80%!important;
+  top: 20%!important;
   left: 27%!important;
   @include transform(translateY(-40%));
 }
@@ -306,7 +306,7 @@ h2 {
 }
 .middle-layer {
   position: absolute;
-  top: -100%;
+  // top: -100%;
   height: 550px;
   width: 100%;
 }

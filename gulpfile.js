@@ -12,7 +12,7 @@ var jsArray = [
   './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
   './bower_components/ui-router/release/angular-ui-router.min.js',
   './bower_components/angular-flexslider/angular-flexslider.js',
-  // './bower_components/parallax/deploy/jquery.parallax.min.js',
+  './bower_components/parallax/deploy/jquery.parallax.js',
 
   //uesr's js
   './js/app.js',
@@ -30,7 +30,7 @@ var ftpdetails = {
   host: 'wohlig.co.in',
   user: 'enter your username',
   pass: 'enter your password',
-  remotePath: "public_html/simi"
+  remotePath: "public_html/simi/mouse"
 };
 
 //Do not change anything below

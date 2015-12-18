@@ -20,7 +20,7 @@ var navigationservice = angular.module('navigationservice', [])
     fullno: 4,
     subnav: []
   },{
-    name: " Hall Of fame",
+    name: " Hall Of Fame",
     classis: "active",
     link: "media",
     fullno: 5,

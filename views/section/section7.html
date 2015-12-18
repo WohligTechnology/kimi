@@ -1,33 +1,36 @@
-<div class="web-layer"></div>
+<div id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 1366px; height: 667px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"
+data-mode="cursor">
+  <div class="web-layer"></div>
 
-<figure class="floor ab"></figure>
+  <figure class="floor ab"></figure>
 
-<div class="container" auto-height>
+  <div class="container" auto-height>
 
-  <figure class="lamp ab"></figure>
-  <figure class="bookshelf ab"></figure>
+    <figure class="lamp ab"></figure>
+    <figure class="bookshelf ab"></figure>
 
-  <div class="contact text-holder ab">
-    <h2>Call us maybe?</h2>
-    <p>Tel:
-      <a href="tel:0506905849">05069 05849</a>
-      <br/>
-      <a href="mailto:simievents@gmail.com">simievents@gmail.com</a>
-    </p>
-    <a class="fb" href="https://www.facebook.com/simievents" target="_blank">
-      <i class="fa fa-facebook-square"></i>
-    </a>
-    <a class="in" href="https://instagram.com/simievents" target="_blank">
-      <i class="fa fa-instagram"></i>
-    </a>
-    <a class="tw" href="https://twitter.com/simievents" target="_blank">
-      <i class="fa fa-twitter-square"></i>
-    </a>
+    <div class="contact text-holder ab">
+      <h2>Call us maybe?</h2>
+      <p>Tel:
+        <a href="tel:0506905849">05069 05849</a>
+        <br/>
+        <a href="mailto:simievents@gmail.com">simievents@gmail.com</a>
+      </p>
+      <a class="fb" href="https://www.facebook.com/simievents" target="_blank">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+      <a class="in" href="https://instagram.com/simievents" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a class="tw" href="https://twitter.com/simievents" target="_blank">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+    </div>
+    <figure class="sofa ab"></figure>
+    <div class="layer depth-grass" data-depth="0.15">
+      <img src="img/section7/phonebaba.png" class="phone ab hidden-md hidden-sm hidden-xs" />
+    </div>
+    <figure class="clock ab"></figure>
   </div>
-
-  <figure class="sofa ab"></figure>
-  <img src="img/section7/phonebaba.png" class="phone ab hidden-md hidden-sm hidden-xs" />
-  <figure class="clock ab"></figure>
+  <div ng-include="template.footer" class="template footer atbottom"></div>
 </div>
-
-<div ng-include="template.footer" class="template footer atbottom"></div>

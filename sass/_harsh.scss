@@ -540,10 +540,16 @@ footer {
     font-size: 24px;
     font-weight: 400;
   }
-
+  .layer-tower2 {
+      top: -290px !important;
+  }
+  .layer-tower1 {
+    top: -89px !important;
+    left: 80% !important;
+}
   // section 7
   .contact {
-    top: 45%;
+    top: 45%!important;
     left: 50%;
     transform: translate(-50%, -50%);
     h2,

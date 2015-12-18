@@ -116,8 +116,10 @@
   .boat {
     width: 80px;
     height: 150px;
-    zoom: 0.8;
-    left: 70px;
+  }
+  .layer-boat {
+    left: 0 !important;
+    top: -102px !important;
   }
   .tower1 {
     width: 80px;
@@ -146,6 +148,9 @@
   .wedo {
     top: 70px;
   }
+  .layer-mic {
+    top: 9% !important;
+  }
 }
 @media (max-width: 480px) {
   .know-us {
@@ -168,9 +173,16 @@
   .tower2 {
     width: 65px;
   }
-  .boat {
-    left: 20px;
-    zoom: 0.7;
+  .layer-tower2 {
+    top: -200px !important;
+  }
+  .layer-tower1 {
+    top: -66px !important;
+    left: 80% !important;
+  }
+  .layer-boat {
+    left: 0 !important;
+    top: -90px !important;
   }
   .tower1 {
     width: 60px;
@@ -200,6 +212,7 @@
   }
   .sofa {
     zoom: 0.4;
+    bottom: 170px;
   }
 
   //    section-4
@@ -226,6 +239,37 @@
     background-size: auto 60%;
   }
   .board .media-one {
-    padding: 20px 15px 10px 15px;
+    padding: 20px 15px 10px;
   }
+  .fence {
+    bottom: 0;
+  }
+  .wave1 {
+    width: 160%;
+}
+  .wave2 {
+    width: 150%;
+}
+  .wave3 {
+    width: 140%;
+}
+  .wave4 {
+    width: 130%;
+}
+  .layer-wave4 {
+    left: -15%!important;
+  }
+  .layer-wave3 {
+    left: -20% !important;
+  }
+  .layer-wave2 {
+    left: -20% !important;
+  }
+  .layer-wave1 {
+    left: -30% !important;
+  }
+  .floor {
+      bottom: 67px;
+    }
+
 }

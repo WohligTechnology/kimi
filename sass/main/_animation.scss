@@ -90,48 +90,34 @@
     @include transform(translate(15px,3px) rotateX(20deg));
   }
 }
+
+
 .light1 {
-  @include animation( light1-animation 8s ease-in-out 0s infinite);
+  @include animation(light2-animation 8s ease 0s infinite);
 }
-@include keyframes (light1-animation) {
+@include keyframes (light2-animation) {
   0% {
-    @include opacity(0);
-    @include transform(rotateY(180deg));
+    @include transform( scaleY(0))
+    @include transform-origin(100% 100%);
   }
   25% {
-    @include opacity(0.3);
-    @include transform(rotateY(0deg));
+      @include transform(scaleY(1));
+          @include transform-origin(100% 100%);
   }
   50% {
-    @include opacity(0.6);
-    @include transform(rotateY(180deg));
+    @include transform(scaleY(10));
+        @include transform-origin(100% 100%);
   }
   75% {
-    @include opacity(1);
-    @include transform(rotateY(0deg));
+    @include transform(scaleY(1));
+        @include transform-origin(100% 100%);
   }
   100% {
-    @include opacity(0.6);
-    @include transform(rotateY(180deg));
+    @include transform(scaleY(0));
+        @include transform-origin(100% 100%);
   }
 }
-// .x-img1 {
-//   @include animation(light-animation 8s ease infinite);
-// }
-// @include keyframes (light-animaton) {
-//   0% {
-//     @include transform(rotate(45deg));
-//     @include opacity(1);
-//   }
-//   50% {
-//     @include transform(rotate(-45deg));
-//     @include opacity(0);
-//   }
-//   100%{
-//     @include transform(rotate(45deg));
-//     @include opacity(1);
-//   }
-// }
+
 
 // hall of fame
 .fly-cam1 {
@@ -205,20 +191,20 @@
 
 //careers
 .cloud-sm {
-  @include animation(fly-cam1-animaton 6s linear 0s infinite);
+  @include animation(move 9s linear 0s infinite);
 }
 
-// @include keyframes (cloud-sm-animation) {
-//     0% {
-//         @include transform(translate(-30px,10px));
-//     }
-//     50% {
-//         @include transform(translate(30px,-10px));
-//     }
-//     100%  {
-//         @include transform(translate(-30px,10px));
-//     }
-// }
+@include keyframes (move) {
+    0% {
+        @include transform(translateX(-30px));
+    }
+    50% {
+        @include transform(translateX(30px));
+    }
+    100%  {
+        @include transform(translateX(-30px));
+    }
+}
 .ufo-sufi {
   @include animation(cloud1-animation 6s ease 0s infinite);
 }
@@ -241,18 +227,18 @@
 }
 @include keyframes(ufo-md-animation) {
   0% {
-    @include transform(translate(40px,-20px) rotate(40deg));
+    @include transform(translate(40px,-20px));
   }
   25% {
-    @include transform(translate(-30px,10px) rotate(30deg));
+    @include transform(translate(-30px,10px) );
   }
   50% {
-    @include transform(translate(-60px,-20px) rotate(20deg));
+    @include transform(translate(-60px,-20px));
   }
   75% {
-    @include transform(translate(-30px,10px) rotate(30deg));
+    @include transform(translate(-30px,10px));
   }
   100% {
-    @include transform(translate(40px,-20px) rotate(40deg));
+    @include transform(translate(40px,-20px));
   }
 }

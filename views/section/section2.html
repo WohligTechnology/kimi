@@ -1,14 +1,22 @@
 <div id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 1366px; height: 667px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"
 data-mode="cursor">
   <div class="web-layer layer" data-depth="0.20"></div>
-  <figure class="cloud1 ab layer" data-depth="0.20"></figure>
+      <div class="layer layer-cloud1" data-depth="0.20">
+  <figure class="cloud1 ab"></figure>
+</div>
   <div auto-height class="container">
-  <div class="middle-layer">
-    <figure class="mic ab layer" data-depth="0.20"></figure>
-    <figure class="cloud2 ab layer" data-depth="0.60"></figure>
-    <figure class="cloud3 ab layer" data-depth="0.60"></figure>
-  </div>
-    <div class="text-holder know-us layer" data-depth="0.060" data-scalar-x="25" data-scalar-y="15" >
+    <div class="middle-layer">
+      <div class="layer layer-mic" data-depth="0.20">
+        <figure class="mic ab"> </figure>
+      </div>
+      <div class="layer layer-cloud2" data-depth="0.20">
+        <figure class="cloud2 ab"></figure>
+      </div>
+      <div class="layer layer-cloud3" data-depth="0.30">
+        <figure class="cloud3 ab"></figure>
+      </div>
+    </div>
+    <div class="text-holder know-us layer" data-depth="0.20" data-scalar-x="25" data-scalar-y="15">
       <h2>Hey there party people!</h2>
       <p>
         Who doesn’t love a great party! Whether you want diamonds in the sky or a unicorn riding across the clouds, we’re your people. Corporate events, classical and cultural shows, artist events from across the world – we can handle it all.
@@ -17,15 +25,31 @@ data-mode="cursor">
         A cut above the rest, we’ve risen above the glamour and opted to give classical and contemporary events the spotlight it deserves! Flying in artist from across the world, we want to give the city of Dubai event experiences they will never forget.
       </p>
     </div>
-    <img class="guitarsufi ab hidden-sm hidden-xs layer" src="img/section2/guitarsufi.png" data-depth="0.3">
+    <div class="layer layerguitar" data-depth="0.20">
+      <img class="guitarsufi ab hidden-sm hidden-xs" src="img/section2/guitarsufi.png">
+    </div>
   </div>
   <div class="sea">
-    <figure class="wave1 ab wv layer" data-depth="1.00"></figure>
-    <img alt="" class="ab tower1 layer" data-depth="0.70" src="img/section2/building.png" />
-    <figure class="wave2 ab wv layer" data-depth="0.60"></figure>
-    <img alt="" class="ab tower2 layer" data-depth="0.70" src="img/section2/building2.png" />
-    <figure class="wave3 ab wv layer" data-depth="0.40"></figure>
-    <figure class="wave4 ab wv layer" data-depth="0.20"></figure>
-    <figure class="boat ab layer" data-depth="0.80"></figure>
+    <div class="layer layer-wave1" data-depth="1.00">
+      <figure class="wave1 ab wv"></figure>
+    </div>
+    <div class="layer layer-tower2" data-depth="0.70">
+      <img alt="" class="ab tower2" src="img/section2/building2.png" />
+    </div>
+    <div class="layer layer-wave2" data-depth="0.60">
+      <figure class="wave2 ab wv"></figure>
+    </div>
+    <div class="layer layer-tower1" data-depth="0.70">
+      <img alt="" class="ab tower1" src="img/section2/building.png" />
+    </div>
+    <div class="layer layer-wave3" data-depth="0.40">
+      <figure class="wave3 ab wv"></figure>
+    </div>
+    <div class="layer layer-wave4" data-depth="0.20">
+      <figure class="wave4 ab wv"></figure>
+    </div>
+    <div class="layer layer-boat" data-depth="0.80">
+      <figure class="boat ab"></figure>
+    </div>
   </div>
 </div>

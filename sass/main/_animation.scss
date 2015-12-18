@@ -315,20 +315,19 @@
 }
 
 
-
 //sohan
 
 
-.fp-viewing-6 .sofa {
-  @include animation(moveupsofa 2s ease 1s forwards);
-}
-@include keyframes(moveupsofa) {
-  0% {
-    @include transform(translateY(100%));
-    @include opacity(1);
-  }
-  100% {
-    @include transform(translateY(-100%));
-    @include opacity(1);
-  }
-}
+// .fp-viewing-6 .sofa {
+//   @include animation(moveupsofa 2s ease 0 forwards);
+// }
+// @include keyframes(moveupsofa) {
+//   0% {
+//     @include (transform translateY(-150%));
+//     @include opacity(1);
+//   }
+//   100% {
+//     @include transform(translateY(0%));
+//     @include opacity(1);
+//   }
+// }

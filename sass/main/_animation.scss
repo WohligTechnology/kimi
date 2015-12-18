@@ -40,20 +40,18 @@
     @include transform( translateX(0px));
   }
 }
-
 .wave1 {
-    @include animation(wave1-animation 6s ease-in-out 0s infinite);
+  @include animation(wave1-animation 6s ease-in-out 0s infinite);
 }
 .wave2 {
-    @include animation(wave2-animation 6s ease-in-out 0s infinite);
+  @include animation(wave2-animation 6s ease-in-out 0s infinite);
 }
 .wave3 {
-    @include animation(wave1-animation 6s ease-in-out 0s infinite);
+  @include animation(wave1-animation 6s ease-in-out 0s infinite);
 }
 .wave4 {
-    @include animation(wave2-animation 6s ease-in-out 0s infinite);
+  @include animation(wave2-animation 6s ease-in-out 0s infinite);
 }
-
 @include keyframes (wave1-animation) {
   0% {
     @include transform(translate(-10px,-2px));
@@ -90,34 +88,73 @@
     @include transform(translate(15px,3px) rotateX(20deg));
   }
 }
-
+.guitarsufi {
+  @include animation(sufi-animtion 12s ease 0s infinite);
+}
+@include keyframes(sufi-animtion) {
+  0% {
+    @include transform(translateY(-40px));
+  }
+  50% {
+    @include transform(translateY(40px));
+  }
+  100% {
+    @include transform(translateY(-40px));
+  }
+}
+.tower1 {
+  @include animation(tower1-animation 12s ease 0s infinite);
+}
+@include keyframes(tower1-animation) {
+  0% {
+    @include transform(translateX(-40px) rotate(-5deg));
+  }
+  50% {
+    @include transform(translateX(40px) rotate(10deg));
+  }
+  100% {
+    @include transform(translateX(-40px) rotate(-5deg));
+  }
+}
+.tower2 {
+  @include animation(burj 11s ease 0s infinite);
+}
+@include keyframes(burj) {
+  0% {
+    @include transform(translateX(20px) rotate(5deg));
+  }
+  50% {
+    @include transform(translateX(-20px) rotate(-10deg));
+  }
+  100% {
+    @include transform(translateX(20px) rotate(5deg));
+  }
+}
 
 .light1 {
   @include animation(light2-animation 8s ease 0s infinite);
 }
 @include keyframes (light2-animation) {
   0% {
-    @include transform( scaleY(0))
-    @include transform-origin(100% 100%);
+    @include transform( scaleY(0)) @include transform-origin(100% 100%);
   }
   25% {
-      @include transform(scaleY(1));
-          @include transform-origin(100% 100%);
+    @include transform(scaleY(1));
+    @include transform-origin(100% 100%);
   }
   50% {
     @include transform(scaleY(10));
-        @include transform-origin(100% 100%);
+    @include transform-origin(100% 100%);
   }
   75% {
     @include transform(scaleY(1));
-        @include transform-origin(100% 100%);
+    @include transform-origin(100% 100%);
   }
   100% {
     @include transform(scaleY(0));
-        @include transform-origin(100% 100%);
+    @include transform-origin(100% 100%);
   }
 }
-
 
 // hall of fame
 .fly-cam1 {
@@ -147,9 +184,9 @@
   0% {
     @include transform(translateY(10px));
   }
-50% {
-  @include transform(translateY(-10px));
-}
+  50% {
+    @include transform(translateY(-10px));
+  }
   100% {
     @include transform(translateY(10px));
   }
@@ -193,17 +230,16 @@
 .cloud-sm {
   @include animation(move 9s linear 0s infinite);
 }
-
 @include keyframes (move) {
-    0% {
-        @include transform(translateX(-30px));
-    }
-    50% {
-        @include transform(translateX(30px));
-    }
-    100%  {
-        @include transform(translateX(-30px));
-    }
+  0% {
+    @include transform(translateX(-30px));
+  }
+  50% {
+    @include transform(translateX(30px));
+  }
+  100% {
+    @include transform(translateX(-30px));
+  }
 }
 .ufo-sufi {
   @include animation(cloud1-animation 6s ease 0s infinite);
@@ -240,5 +276,40 @@
   }
   100% {
     @include transform(translate(40px,-20px));
+  }
+}
+.fp-viewing-2 .car {
+  @include animation(moveme 5s ease 0s forwards);
+}
+@include keyframes(moveme) {
+  0% {
+    @include transform(translateX(0));
+  }
+  100% {
+    @include transform(translateX(-69%));
+  }
+}
+.fp-viewing-4 .fence {
+  @include animation(moveup 2s ease 1s forwards);
+}
+@include keyframes(moveup) {
+  0% {
+    @include transform(translateY(100%));
+    @include opacity(1);
+  }
+  100% {
+    @include transform(translateY(-100%));
+    @include opacity(1);
+  }
+}
+.fp-viewing-4 .sufi-guy {
+  @include animation(genie 6s ease 3s forwards);
+}
+@include keyframes(genie) {
+  0% {
+    @include opacity(0);
+  }
+  100% {
+    @include opacity(1);
   }
 }

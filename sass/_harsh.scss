@@ -242,7 +242,8 @@ section.four {
   background-image: url(../img/section5/fence.png);
   background-size: auto 80px;
   background-repeat: repeat-x;
-  bottom: 90px;
+  bottom: 0;
+  opacity: 0;
   z-index: 2;
 }
 .sufi-guy {
@@ -252,6 +253,7 @@ section.four {
   left: 130px;
   bottom: 40px;
   z-index: 3;
+  opacity: 0;
 }
 .roadway {
   width: 100%;

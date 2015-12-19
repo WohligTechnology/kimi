@@ -118,6 +118,7 @@ a {
     top: calc(100% - 60px)
   }
 }
+
 .header-logo {
   height: 100%;
   padding: 10px;
@@ -364,7 +365,7 @@ a {
 .theatre {
   width: 450px;
   bottom: 0;
-  z-index: 2;
+  z-index: 10 !important;
 }
 .car {
   width: 100%;
@@ -375,14 +376,7 @@ a {
 .light1 {
   width: 450px;
   bottom: 160px;
-  .x-img1 {
-    margin-left: 40px;
-    display: inline-block;
-  }
-  .x-img2 {
-    margin-left: -90px;
-    display: inline-block;
-  }
+  z-index: -1;
 }
 .wedo {
   width: 780px;

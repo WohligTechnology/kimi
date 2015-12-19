@@ -109,13 +109,13 @@
 }
 @include keyframes(sufi-animtion) {
   0% {
-    @include transform(translateY(-40px));
+    @include transform(translateY(-20px));
   }
   50% {
-    @include transform(translateY(40px));
+    @include transform(translateY(20px));
   }
   100% {
-    @include transform(translateY(-40px));
+    @include transform(translateY(-20px));
   }
 }
 .tower1 {
@@ -155,22 +155,27 @@
   0% {
     @include transform( scaleY(1)) ;
     @include transform-origin(100% 100%);
+      z-index: 5;
   }
   25% {
     @include transform(scaleY(10));
     @include transform-origin(100% 100%);
+      z-index: 5;
   }
   50% {
     @include transform(scaleY(1));
     @include transform-origin(100% 100%);
+      z-index: 5;
   }
   75% {
     @include transform(scaleY(10));
     @include transform-origin(100% 100%);
+      z-index: 5;
   }
   100% {
     @include transform(scaleY(1));
     @include transform-origin(100% 100%);
+    z-index: 5;
   }
 }
 
@@ -243,9 +248,31 @@
     @include transform(translateX(-20px));
   }
 }
+// section4
+.fp-viewing-3 .speaker {
+  @include animation(speaker-left 2s ease 300ms forwards);
+}
+@include keyframes(speaker-left) {
+  0% {
+    @include transform(translateX(-100%));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+.fp-viewing-3 .drummer {
+  @include animation(opac 2s ease 400ms forwards);
+}
+@include keyframes(opac) {
+  0% {
+    @include opacity(0);
+  }
+  100% {
+    @include opacity(1);
+  }
+}
 
-
-//careers
+//careers section-5
 .cloud-sm {
   @include animation(move 9s linear 0s infinite);
 }
@@ -298,7 +325,7 @@
   }
 }
 .fp-viewing-2 .car {
-  @include animation(moveme 5s ease 0s forwards);
+  @include animation(moveme 2s ease 0s forwards);
 }
 @include keyframes(moveme) {
   0% {
@@ -309,7 +336,7 @@
   }
 }
 .fp-viewing-4 .fence {
-  @include animation(moveup 2s ease 1s forwards);
+  @include animation(moveup 800ms ease 300ms forwards);
 }
 @include keyframes(moveup) {
   0% {
@@ -322,7 +349,7 @@
   }
 }
 .fp-viewing-4 .sufi-guy {
-  @include animation(genie 6s ease 3s forwards);
+  @include animation(genie 2s ease 800ms forwards);
 }
 @include keyframes(genie) {
   0% {
@@ -333,8 +360,28 @@
   }
 }
 .fp-viewing-4  .fade-me {
-  @include animation(genie 6s ease 1s forwards);
+  @include animation(genie 1s ease 400ms forwards);
 }
-.phone {
-  @include animation(sufi-animtion 12s ease 0s infinite);
+.fp-viewing-6 .phone {
+  @include animation(bouncein 3s ease 0s forwards);
+}
+@include keyframes(bouncein) {
+  0% {
+    @include transform(translateY(-100px));
+  }
+  30% {
+    @include transform(translateY(100px));
+  }
+  50% {
+    @include transform(translateY(60px));
+  }
+  70% {
+    @include transform(translateY(100px));
+  }
+  90% {
+    @include transform(translateY(80px));
+  }
+  100% {
+    @include transform(translateY(100px));
+  }
 }

@@ -44,7 +44,6 @@ section.four {
     color: $twitter;
   }
 }
-
 .sofa {
   width: 550px;
   height: 400px;
@@ -109,6 +108,7 @@ section.four {
   width: 70px;
   height: 40px;
   background-image: url(../img/section6/ufo1.png);
+
   // top: 80px;
   // left: 50%;
 }
@@ -116,6 +116,7 @@ section.four {
   width: 105px;
   height: 55px;
   background-image: url(../img/section6/ufo2.png);
+
   // top: 130px;
   // right: 0;
 }
@@ -124,7 +125,6 @@ section.four {
   height: 360px;
   background-image: url(../img/section6/ufobaba.png);
   top: 130px;
-  left: 100px;
 }
 .garden {
   width: 110%;
@@ -504,8 +504,8 @@ footer {
   // section 6
   .ufo-sufi {
     zoom: 0.7;
-    top: 30%;
-    left: 50px;
+    left: 50px!important;
+    top: 225px;
   }
   .humsafar-cast {
     .casts-one,
@@ -540,12 +540,13 @@ footer {
     font-weight: 400;
   }
   .layer-tower2 {
-      top: -290px !important;
+    top: -290px !important;
   }
   .layer-tower1 {
     top: -89px !important;
     left: 80% !important;
-}
+  }
+
   // section 7
   .contact {
     top: 45%!important;
@@ -568,8 +569,8 @@ footer {
 
   // section 6
   .ufo-sufi {
-    zoom: 0.3;
-    top: 50%;
+    zoom: 0.4;
+    opacity: 0;
   }
   .cloud-md {
     zoom: 0.9;
@@ -579,11 +580,9 @@ footer {
     background-size: auto 150px;
   }
   .text-holder.careers {
-    width: 70%;
-    position: absolute;
-    right: 20px;
+    width: 80%;
+    left: 17% !important;
     z-index: 2;
-    top: 170px;
   }
 
   // section 5

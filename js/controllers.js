@@ -109,7 +109,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('HeaderController', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    console.log(toState);
+    console.log(fromState);
+    console.log("fromState");
+    if(toState.url == "/home" && fromState.url != "^")
+    {
+      location.reload();
+    }
     $(window).scrollTop(0);
     $("body > .loader").hide();
     $("body > .loadedContent").fadeIn(1000);

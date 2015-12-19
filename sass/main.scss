@@ -39,7 +39,7 @@ $instagram: #396d9a !default;
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-
+  overflow-x:hidden !important;
 }
 .primary-bg {
   background-color: $brand-primary;
@@ -209,7 +209,6 @@ h2 {
     margin: -70px auto 0;
   }
 }
-
 .down-text {
   position: absolute;
   z-index: 3;
@@ -271,10 +270,10 @@ h2 {
   top: -5%!important;
 }
 .fade-me {
-    opacity: 0;
+  opacity: 0;
 }
 .fade-mesec4 {
-    opacity: 0;
+  opacity: 0;
 }
 .cloud1 {
   background-image: url(../img/section2/cloud1.png);
@@ -306,6 +305,7 @@ h2 {
 }
 .middle-layer {
   position: absolute;
+
   // top: -100%;
   height: 550px;
   width: 100%;
@@ -315,6 +315,7 @@ h2 {
 }
 .layerguitar {
   left: 65% !important;
+  top: 50px!important;
 }
 .sea {
   position: absolute;
@@ -342,60 +343,65 @@ h2 {
   z-index: 1;
 }
 .layer-tower2 {
-  top: -360px !important;
+  top: -325px !important;
   left: 80% !important;
 }
 .tower1 {
   width: 100px;
 }
 .layer-tower1 {
-  top: -130px!important;
+  top: -115px!important;
   left: 70%!important;
 }
 .wave1 {
   background-image: url(../img/section2/water1.png);
-  height: 170px;
-  width: 150%;
+  height: 150px;
+  width: 165%;
+  background-size: auto 150px;
 }
 .layer-wave1 {
-  top: -80px !important;
-  left: -25% !important;
-  height: 170px;
+  top: -92px !important;
+  left: -35% !important;
+  height: 150px;
   width: 100%;
 }
 .wave2 {
   background-image: url(../img/section2/water2.png);
-  height: 100px;
+  height: 130px;
   width: 140%;
+  background-size: auto 130px;
 }
 .layer-wave2 {
-  top: -45px !important;
-  left: -15% !important;
-  height: 100px;
+  top: -55px !important;
+  left: -20% !important;
+  height: 130px;
   width: 100%;
 }
 .wave3 {
   background-image: url(../img/section2/water3.png);
-  height: 90px;
+  height: 110px;
   width: 130%;
+  background-size: auto 110px;
 }
 .layer-wave3 {
-  top: -20px !important;
+  top: -25px !important;
   left: -15% !important;
-  height: 90px;
+  height: 110px;
   width: 100%;
 }
 .wave4 {
   background-image: url(../img/section2/water4.png);
   height: 95px;
   z-index: 1;
-  width: 115%;
+  width: 120%;
+  background-size: auto 95px;
 }
 .layer-wave4 {
-  top: -10px!important;
-  left: -5%!important;
+  bottom: -83px !important;
   height: 95px;
   width: 100%;
+  position: absolute;
+  left: -10%;
 }
 /* SECTION 3 */
 .road {

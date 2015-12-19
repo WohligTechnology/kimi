@@ -108,6 +108,19 @@
 .guitarsufi {
   @include animation(sufi-animtion 12s ease 0s infinite);
 }
+@keyframes bounce {
+    0%   { top:-500px; animation-timing-function:ease-in;  }
+    37%  { top:0px; animation-timing-function:ease-out; }
+    55%  { top:175px; animation-timing-function:ease-in;  }
+    73%  { top:0px; animation-timing-function:ease-out; }
+    82%  { top:120px; animation-timing-function:ease-in;  }
+    91%  { top:0px; animation-timing-function:ease-out; }
+    96%  { top:50px; animation-timing-function:ease-in;  }
+    100% { top:00px; }
+}
+
+
+
 @include keyframes(sufi-animtion) {
   0% {
     @include transform(translateY(-40px));
@@ -339,7 +352,7 @@
   @include animation(genie 6s ease 1s forwards);
 }
 .phone {
-  @include animation(sufi-animtion 12s ease 0s infinite);
+  @include animation(bounce 12s ease 0s forwards);
 }
 
 .fp-viewing-3  .speaker{

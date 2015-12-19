@@ -26,8 +26,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
   $scope.$on('$viewContentLoaded', function() {
     $timeout(function() {
-      $('.fullpage').fullpage();
       $('.scene').parallax();
+      $('.fullpage').fullpage();
+
+
       console.log($stateParams.name);
       $scope.homeval = $stateParams.name;
       switch ($scope.homeval) {

@@ -1,9 +1,11 @@
-<div id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 100%; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"
+<div id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 100%; height:100%; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"
 data-mode="cursor">
   <div class="web-layer"></div>
 
   <div class="container" auto-height>
-    <figure class="cloud-sm ab"></figure>
+    <div class="layer" data-depth="0.20">
+      <figure class="cloud-sm ab"></figure>
+    </div>
     <!-- <div class="cloud-md ab">
     <div class="careers">
       <h2>Careers</h2>
@@ -12,7 +14,7 @@ data-mode="cursor">
       <a href="mailto:simievents@gmail.com">simievents@gmail.com</a></p>
     </div>
   </div> -->
-    <div class="text-holder careers">
+    <div class="text-holder careers layer" data-depth="0.10">
       <h2>Careers</h2>
       <p>Dream job – Where you’d work in PJs, where petrol costs and calls to bae are covered and where you’d sometimes dine with a mini celebrity or two. (Isn’t everyone a mini celeb these days, anyway?)</p>
       <p>
@@ -26,11 +28,17 @@ data-mode="cursor">
         Leave your resume at <a href="mailto:simievents@gmail.com">simievents@gmail.com</a>
       </p>
     </div>
-    <figure class="ufo-sm ab hidden-xs"></figure>
-    <figure class="ufo-md ab hidden-xs"></figure>
-    <figure class="ufo-sufi ab"></figure>
+    <div class="layer layer-ufosm" data-depth="0.20">
+      <figure class="ufo-sm ab hidden-xs"></figure>
+    </div>
+    <div class="layer layer-ufomd" data-depth="0.30">
+      <figure class="ufo-md ab hidden-xs"></figure>
+    </div>
+    <div class="layer layer-ufosufi" data-depth="0.40">
+      <figure class="ufo-sufi ab"></figure>
+    </div>
   </div>
-  <div class="layer" data-depth="0.15">
+  <div class="layer layer-garden" data-depth="0.15">
     <figure class="garden ab"></figure>
   </div>
   <div class="layer depth-grass" data-depth="0.10">

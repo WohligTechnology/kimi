@@ -347,3 +347,23 @@
     @include transform(translate(00%));
   }
 }
+
+// Section 6 Animation
+
+.fade-me2 {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  opacity: 0;
+}
+.ufo-sufi {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+}
+.fp-viewing-5 {
+  .fade-me2 {
+    opacity: 1;
+  }
+  .ufo-sufi {
+    left: 100px;
+  }
+}

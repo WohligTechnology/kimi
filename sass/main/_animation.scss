@@ -260,9 +260,9 @@
     @include transform(translateY(0));
   }
 }
-.fp-viewing-3 .drummer {
-  @include animation(opac 2s ease 400ms forwards);
-}
+// .fp-viewing-3 .drummer {
+//   @include animation(opac 2s ease 400ms forwards);
+// }
 @include keyframes(opac) {
   0% {
     @include opacity(0);
@@ -365,9 +365,9 @@
 .phone {
   @include animation(genie 1s ease 400ms forwards);
 }
-.fp-viewing-6 .phone {
-  @include animation(bouncein 3s ease 0s forwards);
-}
+// .fp-viewing-6 .phone {
+//   @include animation(bouncein 3s ease 0s forwards);
+// }
 @include keyframes(bouncein) {
   0% {
     @include transform(translateY(-100px));

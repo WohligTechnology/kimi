@@ -274,6 +274,26 @@
     }
 
 }
+// SECTION 2 Animation
+
+.mic {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  top: -400px;
+}
+.fade-me4 {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  opacity: 0 !important;
+}
+.fp-viewing-1 {
+  .mic {
+    top: 0;
+  }
+  .fade-me4 {
+    opacity: 1 !important;
+  }
+}
 // SECTION 3 Animation
 
 .limo {

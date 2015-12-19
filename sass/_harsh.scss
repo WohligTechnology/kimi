@@ -145,6 +145,9 @@ section.four {
 }
 
 // section 5
+.fade-me {
+  opacity: 0;
+}
 .fly-cam1,
 .fly-cam3 {
   width: 170px;
@@ -244,7 +247,7 @@ section.four {
   background-repeat: repeat-x;
   bottom: 0;
   opacity: 0;
-  z-index: 2;
+  z-index: 1;
 }
 .sufi-guy {
   width: 380px;
@@ -254,13 +257,14 @@ section.four {
   bottom: 40px;
   z-index: 3;
   opacity: 0;
+  @include transition(all 1s ease);
 }
 .roadway {
   width: 100%;
   height: 100px;
   background-color: #aeaeae;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 // section 4
@@ -320,6 +324,7 @@ section.four {
   bottom: 100px;
   background-image: url(../img/section4/band.png);
   z-index: 1;
+  opacity: 0;
 }
 .piano-foot {
   width: 100%;

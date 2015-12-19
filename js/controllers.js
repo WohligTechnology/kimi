@@ -27,7 +27,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.$on('$viewContentLoaded', function() {
     $timeout(function() {
       $('.scene').parallax();
-      $('.fullpage').fullpage();
+      $('.fullpage').fullpage({
+        afterLoad: function(anchorLink, index) {
+          if (index == 2) {
+            $('#cheer').trigger("play");
+          } else {
+            $('#cheer').each(function() {
+              this.pause(); // Stop playing
+              this.currentTime = 0; // Reset time
+            });
+          }
+
+          if (index == 7) {
+            $('#ring').trigger("play");
+          } else {
+            $('#ring').each(function() {
+              this.pause(); // Stop playing
+              this.currentTime = 0; // Reset time
+            });
+          }
+        }
+      });
 
 
       console.log($stateParams.name);

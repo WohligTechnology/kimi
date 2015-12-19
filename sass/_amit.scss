@@ -394,19 +394,12 @@
   @include transition-delay(0.5s);
   opacity: 0;
 }
-.ufo-sufi {
-  @include transition(all 800ms cubic-bezier(.87,-.41,.19,1.44));
-  @include transition-delay(0.5s);
-}
 .fp-viewing-5 {
   .nav li:nth-child(5) > a {
     @extend .active-nav;
   }
   .fade-me2 {
     opacity: 1;
-  }
-  .ufo-sufi {
-    left: 100px;
   }
 }
 
@@ -439,4 +432,10 @@
   .phone {
     @include transform(translateY(0));
   }
+}
+.main-loader {
+  position: absolute;
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%,-50%));
 }

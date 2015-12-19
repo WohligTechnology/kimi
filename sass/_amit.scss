@@ -326,3 +326,24 @@
     opacity: 1;
   }
 }
+
+// Section 5 Animation
+
+.fence {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  @include transform(translateY(100%));
+}
+.fade-me, .board, .sufi-guy {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  opacity: 0;
+}
+.fp-viewing-4 {
+  .fade-me, .sufi-guy, .board {
+    opacity: 1;
+  }
+  .fence {
+    @include transform(translate(00%));
+  }
+}

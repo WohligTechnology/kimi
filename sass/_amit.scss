@@ -273,3 +273,16 @@
     }
 
 }
+// SECTION 3 Animation
+
+.limo {
+  @include transition(all 1500ms ease);
+  @include transition-delay(0.5s);
+  right: 0;
+  @include transform(translateX(100%));
+}
+.fp-viewing-2 {
+  .limo {
+    right: 50%
+  }
+}

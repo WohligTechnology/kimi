@@ -89,7 +89,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('HeaderController', function($scope, TemplateService) {
   $scope.template = TemplateService;
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    console.log(toState);
     $(window).scrollTop(0);
+    $("body > .loader").hide();
+    $("body > .loadedContent").fadeIn(1000);
     $("body").css("overflow", "scroll");
   });
 })

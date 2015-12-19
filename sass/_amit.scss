@@ -274,6 +274,13 @@
     }
 
 }
+.active-nav {
+  background-color: darken($brand-primary, 6%);
+}
+// SECTION 1 Animation
+.fp-viewing-0 {
+
+}
 // SECTION 2 Animation
 
 .mic {
@@ -287,6 +294,9 @@
   opacity: 0 !important;
 }
 .fp-viewing-1 {
+  .nav li:nth-child(1) > a {
+    @extend .active-nav;
+  }
   .mic {
     top: 0;
   }
@@ -303,6 +313,9 @@
   @include transform(translateX(100%));
 }
 .fp-viewing-2 {
+  .nav li:nth-child(2) > a {
+    @extend .active-nav;
+  }
   .limo {
     right: 50%
   }
@@ -336,6 +349,9 @@
   opacity: 0;
 }
 .fp-viewing-3 {
+  .nav li:nth-child(3) > a {
+    @extend .active-nav;
+  }
   .light, .speaker, .piano-foot {
     @include transform(translate(00%));
   }
@@ -360,6 +376,9 @@
   opacity: 0;
 }
 .fp-viewing-4 {
+  .nav li:nth-child(4) > a {
+    @extend .active-nav;
+  }
   .fade-me, .sufi-guy, .board {
     opacity: 1;
   }
@@ -380,6 +399,9 @@
   @include transition-delay(0.5s);
 }
 .fp-viewing-5 {
+  .nav li:nth-child(5) > a {
+    @extend .active-nav;
+  }
   .fade-me2 {
     opacity: 1;
   }
@@ -405,6 +427,9 @@
   opacity: 0;
 }
 .fp-viewing-6 {
+  .nav li:nth-child(6) > a {
+    @extend .active-nav;
+  }
   .fade-me3 {
     opacity: 1;
   }

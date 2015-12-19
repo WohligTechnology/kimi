@@ -125,6 +125,7 @@ section.four {
   height: 360px;
   background-image: url(../img/section6/ufobaba.png);
   top: 130px;
+  left: 100px;
 }
 .garden {
   width: 110%;
@@ -581,7 +582,8 @@ footer {
   }
   .text-holder.careers {
     width: 80%;
-    left: 17% !important;
+    top: 90px!important;
+    left: 15% !important;
     z-index: 2;
   }
 
@@ -615,12 +617,8 @@ footer {
 }
 @media (max-width: 550px) {
   .text-holder.careers {
-    width: 100%;
-    position: absolute;
-    padding: 20px;
-    right: 0;
-    z-index: 2;
-    top: 55px;
+    width: 85%;
+    left: 5% !important;
   }
   .ufo-sufi {
     opacity: 0;

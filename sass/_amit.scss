@@ -95,6 +95,7 @@
   //    section-3
   .wedo {
     width: 100%;
+    left: 6% !important;
   }
   .theatre {
     width: auto;
@@ -284,5 +285,44 @@
 .fp-viewing-2 {
   .limo {
     right: 50%
+  }
+}
+
+// SECTION 4 Animation
+
+.light {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  @include transform(translateY(-120%));
+}
+.speaker {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  @include transform(translateX(-100%));
+}
+.drummer {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.5s);
+  @include transform(scale(0));
+}
+.piano-foot {
+  @include transition(all 800ms ease);
+  @include transition-delay(0.2s);
+  @include transform(translateY(100%));
+}
+.event {
+  @include transition(all 600ms ease);
+  @include transition-delay(0.7s);
+  opacity: 0;
+}
+.fp-viewing-3 {
+  .light, .speaker, .piano-foot {
+    @include transform(translate(00%));
+  }
+  .drummer {
+    @include transform(scale(1));
+  }
+  .event {
+    opacity: 1;
   }
 }

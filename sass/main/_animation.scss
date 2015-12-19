@@ -249,9 +249,9 @@
   }
 }
 // section4
-.fp-viewing-3 .speaker {
-  @include animation(speaker-left 2s ease 300ms forwards);
-}
+// .fp-viewing-3 .speaker {
+//   @include animation(speaker-left 2s ease 300ms forwards);
+// }
 @include keyframes(speaker-left) {
   0% {
     @include transform(translateX(-100%));
@@ -324,9 +324,9 @@
     @include transform(translate(40px,-20px));
   }
 }
-.fp-viewing-2 .car {
-  @include animation(moveme 2s ease 0s forwards);
-}
+// .fp-viewing-2 .car {
+//   @include animation(moveme 2s ease 0s forwards);
+// }
 @include keyframes(moveme) {
   0% {
     @include transform(translateX(0));
@@ -335,9 +335,9 @@
     @include transform(translateX(-30%));
   }
 }
-.fp-viewing-4 .fence {
-  @include animation(moveup 800ms ease 300ms forwards);
-}
+// .fp-viewing-4 .fence {
+//   @include animation(moveup 800ms ease 300ms forwards);
+// }
 @include keyframes(moveup) {
   0% {
     @include transform(translateY(100%));
@@ -348,9 +348,9 @@
     @include opacity(1);
   }
 }
-.fp-viewing-4 .sufi-guy {
-  @include animation(genie 2s ease 800ms forwards);
-}
+// .fp-viewing-4 .sufi-guy {
+//   @include animation(genie 2s ease 800ms forwards);
+// }
 @include keyframes(genie) {
   0% {
     @include opacity(0);
@@ -359,9 +359,9 @@
     @include opacity(1);
   }
 }
-.fp-viewing-4  .fade-me {
-  @include animation(genie 6s ease 1s forwards);
-}
+// .fp-viewing-4  .fade-me {
+//   @include animation(genie 6s ease 1s forwards);
+// }
 .phone {
   @include animation(genie 1s ease 400ms forwards);
 }

@@ -428,11 +428,12 @@ h2 {
 .theatre {
   width: 450px;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
 }
 .light1 {
   width: 450px;
   bottom: 160px;
+  z-index: -1;
 }
 .wedo {
   width: 780px;

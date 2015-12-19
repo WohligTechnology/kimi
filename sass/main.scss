@@ -511,6 +511,39 @@ h2 {
     z-index: 1;
   }
 }
+
+.layer.layer-cam1 {
+    top: 145px !important;
+}
+
+.layer.layer-cam2 {
+    top: 14%!important;
+    left: 12%!important;
+}
+
+.layer.layer-cam3 {
+    top: 22%!important;
+    left: 22% !important;
+}
+
+.layer.layer-cam4 {
+    top: 10%!important;
+    left: 32%!important;
+}
+
+.layer.layer-ufosm {
+    top: 80px !important;
+    left: 50%!important;
+}
+
+.layer.layer-ufomd {
+    top: 130px!important;
+    left: 80%!important;
+}
+.layer.layer-garden {
+    width: 100%;
+    top: 100%!important;
+}
 @import "harsh.scss";
 @import "amit.scss";
 @import "mobile.scss";

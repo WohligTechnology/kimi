@@ -248,21 +248,7 @@
     @include transform(translateX(-20px));
   }
 }
-// section4
-// .fp-viewing-3 .speaker {
-//   @include animation(speaker-left 2s ease 300ms forwards);
-// }
-@include keyframes(speaker-left) {
-  0% {
-    @include transform(translateX(-100%));
-  }
-  100% {
-    @include transform(translateY(0));
-  }
-}
-// .fp-viewing-3 .drummer {
-//   @include animation(opac 2s ease 400ms forwards);
-// }
+
 @include keyframes(opac) {
   0% {
     @include opacity(0);
@@ -324,9 +310,6 @@
     @include transform(translate(40px,-20px));
   }
 }
-// .fp-viewing-2 .car {
-//   @include animation(moveme 2s ease 0s forwards);
-// }
 @include keyframes(moveme) {
   0% {
     @include transform(translateX(0));
@@ -335,56 +318,6 @@
     @include transform(translateX(-30%));
   }
 }
-// .fp-viewing-4 .fence {
-//   @include animation(moveup 800ms ease 300ms forwards);
-// }
-@include keyframes(moveup) {
-  0% {
-    @include transform(translateY(100%));
-    @include opacity(1);
-  }
-  100% {
-    @include transform(translateY(-100%));
-    @include opacity(1);
-  }
-}
-// .fp-viewing-4 .sufi-guy {
-//   @include animation(genie 2s ease 800ms forwards);
-// }
-@include keyframes(genie) {
-  0% {
-    @include opacity(0);
-  }
-  100% {
-    @include opacity(1);
-  }
-}
-// .fp-viewing-4  .fade-me {
-//   @include animation(genie 6s ease 1s forwards);
-// }
 .phone {
   @include animation(genie 1s ease 400ms forwards);
-}
-// .fp-viewing-6 .phone {
-//   @include animation(bouncein 3s ease 0s forwards);
-// }
-@include keyframes(bouncein) {
-  0% {
-    @include transform(translateY(-100px));
-  }
-  30% {
-    @include transform(translateY(100px));
-  }
-  50% {
-    @include transform(translateY(60px));
-  }
-  70% {
-    @include transform(translateY(100px));
-  }
-  90% {
-    @include transform(translateY(80px));
-  }
-  100% {
-    @include transform(translateY(100px));
-  }
 }

@@ -84,33 +84,16 @@ section.four {
   left: -70px;
   background-image: url(../img/section6/cloud1.png);
 }
-
-// .cloud-md {
-//   width: 350px;
-//   height: 220px;
-//   background-image: url('../img/section6/cloud2.png');
-//   top: 130px;
-//   right: 0;
-//   padding-top: 65px;
-//   z-index: 1;
 .text-holder.careers {
   width: 50%;
   left: 50%!important;
   top: 170px!important;
   z-index: 2;
-  p {
-    font-size: 12px;
-  }
 }
-
-// }
 .ufo-sm {
   width: 70px;
   height: 40px;
   background-image: url(../img/section6/ufo1.png);
-
-  // top: 80px;
-  // left: 50%;
 }
 .ufo-md {
   width: 105px;
@@ -674,5 +657,11 @@ footer {
     p {
       font-size: 12px;
     }
+  }
+  .container > .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-primary .nav {
+    width: 100%;
   }
 }

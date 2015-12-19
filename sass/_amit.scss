@@ -152,6 +152,12 @@
   .layer-mic {
     top: 9% !important;
   }
+  .container > .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-primary .nav {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .know-us {
@@ -440,7 +446,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   @include transform(translate(-50%,-50%));
 }

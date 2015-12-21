@@ -110,4 +110,43 @@
     font-size: 18px;
     line-height: 110%;
   }
+  .garden {
+    height: 100px;
+    background-size: auto 100px;
+  }
+  .text-holder.careers.layer p {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .floor {
+    bottom: 49px;
+  }
+  .lamp {
+    top: 20px;
+  }
+  .wave4 {
+    height: 30px;
+    background-size: auto 30px;
+    bottom: 8px;
+  }
+  .wave3 {
+    height: 40px;
+    background-size: auto 40px;
+    bottom: 18px;
+  }
+  .wave1 {
+    bottom: 8px;
+  }
+  .cloud1 {
+    bottom: 0px;
+}
+.layer-boat {
+    left: 0 !important;
+    top: 55px !important;
+}
 }

@@ -202,12 +202,23 @@
     zoom: 0.7;
   }
   .cloud2 {
-    zoom: 0.7;
+    display: none;
   }
   .cloud3 {
     zoom: 0.6;
-    left: auto;
-    right: 10px;
+  left: 60px;
+  right: 0px;
+  }
+  .text-holder.careers.layer {
+    p {
+      font-size: 10px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+  h2 {
+    font-size: 16px !important;
   }
   .theatre {
     left: 50%;
@@ -240,8 +251,18 @@
     }
   }
   .light {
-    zoom: 0.6;
+    zoom: 0.4;
+    top: 120px;
   }
+  .fence {
+    display: none;
+  }
+  .tower2 {
+    display: none;
+  }
+  .cloud1 {
+    bottom: 0;
+}
   .section.three {
     background-size: auto 60%;
   }

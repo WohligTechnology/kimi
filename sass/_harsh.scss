@@ -606,6 +606,9 @@ footer {
   .ufo-sufi {
     opacity: 0;
   }
+  .lamp {
+    top: 30px;
+  }
 }
 
 // landscape
@@ -658,10 +661,20 @@ footer {
       font-size: 12px;
     }
   }
-  .container > .navbar-collapse {
-    padding: 0;
+  .fence {
+    display: none;
   }
-  .navbar-primary .nav {
-    width: 100%;
+  .sufi-guy {
+    display: none;
+  }
+  .roadway.ab {
+    display: none;
+  }
+  .board h2 {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .know-us h2 {
+    font-size: 14px;
   }
 }

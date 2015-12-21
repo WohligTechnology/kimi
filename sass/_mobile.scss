@@ -143,10 +143,14 @@
     bottom: 8px;
   }
   .cloud1 {
-    bottom: 0px;
-}
-.layer-boat {
+    bottom: 0;
+  }
+  .layer-boat {
     left: 0 !important;
     top: 55px !important;
-}
+  }
+  .drummer {
+    bottom: 10px;
+    zoom: 0.3;
+  }
 }

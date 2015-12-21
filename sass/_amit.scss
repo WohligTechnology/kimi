@@ -187,6 +187,14 @@
     top: -66px !important;
     left: 80% !important;
   }
+  .drummer {
+    bottom: 40px;
+    zoom: 0.5;
+  }
+  .speaker {
+    zoom: 0.5;
+    left: -10px;
+  }
   .layer-boat {
     left: 0 !important;
     top: -90px !important;
@@ -206,8 +214,8 @@
   }
   .cloud3 {
     zoom: 0.6;
-  left: 60px;
-  right: 0px;
+    left: 60px;
+    right: 0;
   }
   .text-holder.careers.layer {
     p {
@@ -254,15 +262,12 @@
     zoom: 0.4;
     top: 120px;
   }
-  .fence {
-    display: none;
-  }
   .tower2 {
     display: none;
   }
   .cloud1 {
     bottom: 0;
-}
+  }
   .section.three {
     background-size: auto 60%;
   }
@@ -270,7 +275,7 @@
     padding: 20px 15px 10px;
   }
   .fence {
-    bottom: 0;
+    bottom: 50px;
   }
   .wave1 {
     width: 160%;

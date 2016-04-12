@@ -104,6 +104,20 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
   TemplateService.header = "views/header-others.html";
+  $scope.cast = [
+    {
+      img: "img/eventdetail/salim.jpg",
+      alt: "Salim",
+      name: "Salim",
+      descp: "lorem ipsum"
+    },
+    {
+      img: "img/eventdetail/luban.jpg",
+      alt: "luban",
+      name: "luban",
+      descp: "lubanluban lubanluban"
+    }
+  ];
 })
 
 .controller('HeaderController', function($scope, TemplateService) {

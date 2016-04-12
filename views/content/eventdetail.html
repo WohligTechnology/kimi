@@ -2,22 +2,40 @@
   <div class="web-layer"></div>
 
   <div class="humsafar-image">
-    <img src="img/eventdetail/humsafar-image.jpg" alt="humsafar" />
+    <img src="img/eventdetail/stories.jpg" alt="Storries" />
   </div>
   <div class="humsafar-about">
     <img src="img/section2/cloud1.png" alt="" class="cloudy-sm ab" />
     <img src="img/section2/cloud3.png" alt="" class="cloudy-md ab" />
     <div class="container">
-      <h2>About Humsafar</h2>
+      <h2>ABOUT SOME STORIES SOME EMOTION</h2>
       <p>Humsafar is a contemporary take on relationships existing in metros today. It is about a couple, Sameer (Harsh Chhaya) and Sonal (Lubna Salim), who can’t see eye to eye on a lot of things and don’t realize that they are actually made for each other.
         The story starts at a crucial juncture — 15 years after the wedding. It starts where they come to a conclusion that they cannot stay together. The play then spans the next 10 years as unforeseen circumstances keep throwing them into each other’s
         way. That is how the journey progresses.</p>
     </div>
   </div>
+  <div class="the-stories">
+    <div class="container">
+      <h2>THE STORIES</h2>
+       <ul>
+         <li>
+           <p><span>OOB: </span> This story reflects the 'OOB' (boredom) of a professor in an examination hall, where he has no work and has to sit idle for three hours.</p>
+         </li>
+         <li>
+           <p><span>SIR KA SADKA: </span> Every writer has a different view on the position of women in society. In this story Bhishm Sahni talks about a woman called Ishro whose husband has married another woman.</p>
+         </li>
+         <li><p><span>DHOLAK: </span> Marriage is a big occasion in India. But the new generation denies it and wants to do things simply without following the old traditions. Ramdev, the bridegroom is on his nerves with his family and the traditions forced upon him.</p></li>
+         <li>
+           <p><span>YAADEIN: </span> In this tale, an old woman is shown alone in darkness until her friend decides to visit her. For that time that corner lights up with giggles and songs and shadows of memories.</p>
+         </li>
+         <li><p><span>SAMADHI BHAI RAMSINGH: </span> Our country thrives on blind faith. This story is about Ramsingh who goes to a village and starts giving Chirayta (ayurvedic medicine) to everyone for free. </p></li>
+       </ul>
+    </div>
+  </div>
   <div class="humsafar-cast">
     <div class="container">
       <h2>Cast</h2>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-4">
           <div class="casts-one">
             <div class="cast-image">
@@ -58,6 +76,21 @@
             </p>
           </div>
         </div>
+      </div> -->
+      <div class="cast-slider">
+        <flex-slider class="carousel" flex-slide="stories in cast track by $index" animation="fade" item-margin="0" item-width="400">
+          <li>
+            <div class="cast-detail">
+              <div class="cast-image">
+                <div class="cast-inner">
+                  <img class="img-responsive" ng-src="{{stories.img}}" alt="{{stories.alt}}" />
+                  <h3>{{stories.name}}</h3>
+                </div>
+              </div>
+              <p>{{stories.descp}}</p>
+            </div>
+          </li>
+        </flex-slider>
       </div>
     </div>
   </div>

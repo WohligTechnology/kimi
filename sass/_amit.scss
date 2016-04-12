@@ -189,7 +189,7 @@
   }
   .drummer {
     bottom: 40px;
-    zoom: 0.5;
+    zoom: 0.45;
   }
   .speaker {
     zoom: 0.5;
@@ -251,9 +251,12 @@
     }
     .event-one {
       h3 {
-        font-size: 40px;
+        font-size: 20px;
+        margin: 20px 0 10px;
       }
       p {
+        padding: 0px 10px;
+        margin: 0;
         font-size: 13px;
       }
     }

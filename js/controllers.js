@@ -116,6 +116,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       alt: "luban",
       name: "luban",
       descp: "lubanluban lubanluban"
+    },
+    {
+      img: "img/eventdetail/salim.jpg",
+      alt: "Salim",
+      name: "Salim",
+      descp: "lorem ipsum"
+    },
+    {
+      img: "img/eventdetail/luban.jpg",
+      alt: "luban",
+      name: "luban",
+      descp: "lubanluban lubanluban"
     }
   ];
 })

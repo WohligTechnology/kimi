@@ -78,12 +78,14 @@
         </div>
       </div> -->
       <div class="cast-slider">
-        <flex-slider class="carousel" flex-slide="stories in cast track by $index"  animation="slide" animation-loop="false" item-width="400" item-margin="10">
+        <flex-slider class="carousel" flex-slide="stories in cast track by $index"  animation="slide" animation-loop="false" item-width="400" item-margin="10" direction-nav="false">
           <li>
             <div class="cast-detail">
               <div class="cast-image">
                 <div class="cast-inner">
-                  <img class="img-responsive" ng-src="{{stories.img}}" alt="" />
+                  <div class="cast-imgholder">
+                    <img class="img-responsive" ng-src="{{stories.img}}" alt="" />
+                  </div>
                   <h3>{{stories.name}}</h3>
                 </div>
               </div>

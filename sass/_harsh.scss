@@ -396,10 +396,13 @@ footer {
   }
 }
 .humsafar-cast {
-  .casts-one,
-  .casts-two,
-  .casts-three {
+  .flexslider {
+    border: none;
+    margin: 0;
+    background-color: transparent;
+  }
     .cast-image {
+      width: 300px;
       margin: 10px 10px 30px;
       padding: 5px;
       background-color: $body-bg;
@@ -420,16 +423,6 @@ footer {
       margin: 0;
       text-align: justify;
     }
-  }
-  .casts-one {
-    padding-right: 60px;
-  }
-  .casts-two {
-    padding: 0 30px;
-  }
-  .casts-three {
-    padding-left: 60px;
-  }
 }
 .humsafar-events {
   ul {

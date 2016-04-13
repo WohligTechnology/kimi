@@ -361,6 +361,7 @@ footer {
   overflow: hidden;
   h2 {
     margin-bottom: 20px;
+    font-size: 42px;
   }
   img {
     width: 100%;
@@ -378,10 +379,12 @@ footer {
 .humsafar-about,
 .humsafar-cast,
 .humsafar-events {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .humsafar-about {
   position: relative;
+  margin-bottom: 50px;
+  font-weight: 700;
   .cloudy-sm {
     width: 150px;
     height: 100px;
@@ -395,15 +398,66 @@ footer {
     right: -165px;
   }
 }
+.humsafar-events p { font-size: 15px; }
+.the-stories {
+  margin: 0 0 50px;
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      p { font-weight: 700; }
+      span {
+        display: block;
+        font-size: 22px;
+      }
+    }
+  }
+}
 .humsafar-cast {
   .flexslider {
     border: none;
     margin: 0;
     background-color: transparent;
   }
+  .flex-direction-nav .flex-disabled {
+    opacity: 1 !important;
+    z-index: auto;
+  }
+  .flex-direction-nav .flex-prev { opacity: 1; }
+  .flex-direction-nav .flex-next { opacity: 1; }
+  .flexslider:hover .flex-direction-nav .flex-prev {
+    left: -50px;
+    opacity: 1;
+  }
+  .flexslider:hover .flex-direction-nav .flex-next {
+    right: -50px;
+    opacity: 1;
+  }
+  .flex-direction-nav a {
+    height: 50px;
+    z-index: 1;
+  }
+  .cast-detail {
+    width: 270px;
+    margin: 0 auto;
+    p {
+      font-weight: 700;
+      word-break: break-all;
+    }
+  }
+  .written {
+    margin-top: 35px;
+    font-size: 30px;
+    text-align: center;
+    h3 {
+      padding-top: 8px;
+      border-top: 2px solid #4d2261;
+      margin-top: 8px;
+    }
+  }
     .cast-image {
-      width: 300px;
-      margin: 10px 10px 30px;
+      width: 250px;
+      margin: 10px auto 30px;
       padding: 5px;
       background-color: $body-bg;
       border-radius: 5px;

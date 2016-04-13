@@ -58,6 +58,10 @@
     height: 400px;
     zoom: 0.9;
   }
+  .cast-slider {
+    width: 740px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: $screen-sm-max) {
 
@@ -102,6 +106,19 @@
     height: 30vh;
     left: 30%;
   }
+  // eventdetail-page
+    .humsafar h2 { font-size: 30px; }
+  .the-stories ul li span { font-size: 20px; }
+  .humsafar-cast .cast-detail {
+    width: 250px;
+    .cast-image { width: 220px; }
+    h3 { font-size: 20px; }
+  }
+  .humsafar-cast .flex-direction-nav a { zoom: 0.9; }
+  .flex-direction-nav .flex-prev { left: 0px; }
+  .flex-direction-nav .flex-next { right: 0px; }
+  .humsafar-cast .flexslider:hover .flex-direction-nav .flex-prev { left: 0px; }
+  .humsafar-cast .flexslider:hover .flex-direction-nav .flex-next { right: 0px; }
 }
 @media (max-width: $screen-xs-max) {
 
@@ -158,6 +175,10 @@
   .navbar-primary .nav {
     width: 100%;
   }
+  // eventdetail
+  .humsafar h2 { font-size: 24px; }
+    .the-stories ul li span { font-size: 17px; }
+    .cast-slider { width: 370px; }
 }
 @media (max-width: 480px) {
   .know-us {
@@ -307,6 +328,7 @@
   .floor {
     bottom: 67px;
   }
+  .humsafar h2 { font-size: 19px !important; }
 }
 .active-nav {
   background-color: darken($brand-primary, 6%);

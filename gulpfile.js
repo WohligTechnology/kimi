@@ -30,7 +30,8 @@ var ftpdetails = {
   host: 'wohlig.co.in',
   user: 'enter your username',
   pass: 'enter your password',
-  remotePath: "public_html/simievents.com"
+  // remotePath: "public_html/simievents.com"
+  remotePath: "public_html/simievent/demo"
 };
 
 //Do not change anything below

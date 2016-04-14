@@ -121,7 +121,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       img: "img/eventdetail/yashpalsharma.jpg",
       alt: "Yashpal Sharma",
       name: "Yashpal Sharma",
-      descp: "Yashpal Sharma is an Indian Bollywood actor and theatre artist.[1] He is best known for his role as Randhir Singh in Sudhir Mishra's 2003 Hindi movie Hazaaron Khwaishein Aisi, apart from Lagaan (2001), Gangaajal (2003), Ab Tak Chhappan (2004), Apaharan (2005), Singh is Kinng (2008), Arakshan (2011) and Rowdy Rathore (2012). He played Kuwar Singh in Zee's Mera Naam Karegi Roshan. Yashpal is also a stage actor and appears in live plays. He formerly starred in Zee's Neeli Chhatri Waale."
+      descp: "Yashpal Sharma is an Indian Bollywood actor and theatre artist. He is best known for his role as Randhir Singh in Sudhir Mishra's 2003 Hindi movie Hazaaron Khwaishein Aisi, apart from Lagaan (2001), Gangaajal (2003), Ab Tak Chhappan (2004), Apaharan (2005), Singh is Kinng (2008), Arakshan (2011) and Rowdy Rathore (2012). He played Kuwar Singh in Zee's Mera Naam Karegi Roshan. Yashpal is also a stage actor and appears in live plays. He formerly starred in Zee's Neeli Chhatri Waale."
     },
     {
       img: "img/eventdetail/manojpahwa.jpg",

@@ -16,7 +16,6 @@ $brand-success: #d4a630 !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-
 $font-color: #242424 !default;
 
 $body-bg: #fff !default;
@@ -460,6 +459,7 @@ a {
     z-index: 1;
   }
 }
+
 @import "harsh.scss";
 @import "amit.scss";
 @import "mobile.scss";

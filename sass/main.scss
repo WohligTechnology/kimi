@@ -459,7 +459,17 @@ a {
     z-index: 1;
   }
 }
-
+.humsafar-cast1 .written{
+span{
+  font-size:28px;
+}
+   h3 {
+     font-size: 24px;
+    padding-top: 8px;
+    border-top: 2px solid #4d2261;
+    margin-top: 8px;
+}
+}
 @import "harsh.scss";
 @import "amit.scss";
 @import "mobile.scss";
